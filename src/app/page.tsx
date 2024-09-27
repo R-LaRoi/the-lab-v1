@@ -1,25 +1,17 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <>
-      <main>
-        <div>AH LAB</div>
-        <h1>
-          TURN
-        </h1>
-        <h1>
-          VISION
-        </h1>
-        <h1>
 
-          INTO
-        </h1>
-        <h1>
+      <main className="intro-container">
+        <div className="inner-content text-2xl">
+          <div>AH LAB</div>
 
-          VALUE
-        </h1>
+        </div>
       </main>
+
+
     </>
   );
 }
