@@ -31,8 +31,8 @@ export const NavBar = (): React.ReactElement => {
 
   return (
 
-    <section className="fixed top-0 left-0 w-full flex justify-between items-center p-8 z-[9999]">
-      <div className="flex items center space-x-4">
+    <section className="fixed top-4 left-0 w-full flex justify-between items-center  p-10 z-[9999]">
+      <div className="flex items-center">
         <Image
           src={ahlogo}
           alt="logo"
@@ -40,7 +40,7 @@ export const NavBar = (): React.ReactElement => {
           height={50}
           priority
         />
-        <small className="pt-9 pl-8">AH LAB</small>
+        <small className="pl-12">AH LAB</small>
       </div>
 
 
@@ -100,7 +100,7 @@ export const NavBar = (): React.ReactElement => {
           :
 
 
-          <div onClick={showNavMenu} className="button pr-8 hover cursor-pointer">
+          <div onClick={showNavMenu} className="button mr-8 pr-8 hover cursor-pointer">
             <svg width="30" height="61" viewBox="0 0 30 61" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1490_325)">
                 <path className="lineA" d="M5.07 11 C5.07 27.33 5.07 43.66 5.07 60 " stroke="#EEEEF2" stroke-width="2" data-original="M5.07849 11V60"></path>

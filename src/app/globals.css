@@ -47,7 +47,7 @@ body {
 
 .intro-container {
   position: fixed;
-  top: 0.7rem;
+  top: 0.9rem;
   left: 0.7rem;
   right: 0.7rem;
   bottom: 0.7rem;
@@ -58,13 +58,17 @@ body {
 }
 
 .inner-content {
-  height: 100%;
-  overflow-y: scroll;
-  padding: 2rem;
-  padding-right: calc(2rem + 20px);
-  box-sizing: border-box;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  font-size: 15.5vw;
+  font-family: var(--font-tunnels);
+  /* align-items: flex-start;
+  height: 100vh;
+  min-height: auto;
+  padding-bottom: 4.1666vw;
+  padding-top: 17.5vh;
+  z-index: 5;
+  padding-left: 12.4998vw;
+  padding-right: 12.4998vw;
+  font-size: clamp(90px, 15.27vw, 340px); */
 }
 
 .inner-content::-webkit-scrollbar {
@@ -72,9 +76,11 @@ body {
 }
 
 .text {
+  font-size: 15.5vw;
   font-family: var(--font-tunnels);
-  font-size: 12rem;
-  padding: 3rem;
+
+  /*
+  padding: 6rem; */
 }
 
 @layer utilities {
