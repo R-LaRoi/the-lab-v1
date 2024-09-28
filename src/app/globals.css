@@ -71,6 +71,12 @@ body {
   display: none;
 }
 
+.text {
+  font-family: var(--font-tunnels);
+  font-size: 12rem;
+  padding: 3rem;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
