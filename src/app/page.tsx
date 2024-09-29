@@ -21,17 +21,19 @@ export default function Home() {
       <NavBar />
       <main className="intro-container">
         <div className="inner-content text-2xl flex items-center justify-center h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8 hero-text ">
-            <div className="flex flex-col items-end ">
-              <div>CREATIVE</div>
+          <div className="grid grid-cols-1 md:grid-cols-2   hero-text">
+            <div className="flex flex-col items-start">
+              <div className="ml-8 left">CREATIVE</div>
               <div className="blur-circle" style={circleStyle}></div>
               <ThreeDimension />
 
             </div>
-            <div className="flex flex-col items-end ">
-              <div className="text-[#F2FF01]">WEB</div>
+            <div className="flex flex-col items-end right">
+              <div className="text-[#F2FF01] mb-3">WEB</div>
               <div className="mt-20 pt-14">AGENCY</div>
+              <div className="box"></div>
             </div>
+
           </div>
         </div>
 

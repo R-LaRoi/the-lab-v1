@@ -78,10 +78,32 @@ body {
 .inner-content {
   font-size: 15.5vw;
   font-family: var(--font-tunnels);
+  margin-top: 1%;
 }
 
+.left {
+  margin-left: 10%;
+}
+.right {
+  margin-right: 5%;
+}
 .inner-content::-webkit-scrollbar {
   display: none;
+}
+
+.box {
+  font-size: 1rem;
+  align-items: center;
+  border: 1px solid rgba(238, 238, 242, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+  margin-top: 5rem;
+  overflow: hidden;
+  padding: 1.5em 2.25em;
+  position: relative;
+  width: 90%;
 }
 
 @layer utilities {
