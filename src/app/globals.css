@@ -45,9 +45,26 @@ body {
   transition-property: opacity, background, color;
 }
 
+.blur-circle {
+  background: radial-gradient(#f2ff01, rgba(107, 121, 238, 0) 70%);
+  border-radius: 50%;
+  height: 70vw;
+  left: 40%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  -moz-transform: translate(-50%, -50%) scale(0.25);
+  -webkit-transform: translate(-50%, -50%) scale(0.25);
+  -o-transform: translate(-50%, -50%) scale(0.25);
+  -ms-transform: translate(-50%, -50%) scale(0.25);
+  width: 60vw;
+  z-index: -1;
+}
+
 .intro-container {
   position: fixed;
-  top: 0.9rem;
+  top: 0.6rem;
   left: 0.7rem;
   right: 0.7rem;
   bottom: 0.7rem;
