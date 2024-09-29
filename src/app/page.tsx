@@ -21,7 +21,7 @@ export default function Home() {
       <NavBar />
       <main className="intro-container">
         <div className="inner-content text-2xl flex items-center justify-center h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 hero-text">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8 hero-text ">
             <div className="flex flex-col items-end ">
               <div>CREATIVE</div>
               <div className="blur-circle" style={circleStyle}></div>

@@ -1,3 +1,4 @@
+
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
@@ -31,17 +32,19 @@ export const NavBar = (): React.ReactElement => {
 
   return (
 
-    <section className="fixed top-4 left-0 w-full flex justify-between items-center  p-10 z-[9999]">
-      <div style={{ maxWidth: '100%', height: 'auto' }}>
-        <Image
-          src={ahlogo}
-          alt="logo"
-          width={90}
-          height={50}
-          priority
-        />
+    <section className="fixed top-4 left-0 w-full flex justify-between items-center p-10 z-[9999]">
+      <div className="flex items-center">
+        <div style={{ maxWidth: '100%', height: 'auto' }}>
+          <Image
+            src={ahlogo}
+            alt="logo"
+            width={50}
+
+            priority
+          />
+        </div>
+        <small className="ml-4">AH LAB</small>
       </div>
-      <small className="pl-12">AH LAB</small>
 
 
 
@@ -102,7 +105,7 @@ export const NavBar = (): React.ReactElement => {
 
 
           <div onClick={showNavMenu} className="button mr-8 pr-8 hover cursor-pointer">
-            <svg width="30" height="61" viewBox="0 0 30 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="30" height="35" viewBox="0 0 30 61" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_1490_325)">
                 <path className="lineA" d="M5.07 11 C5.07 27.33 5.07 43.66 5.07 60 " stroke="#EEEEF2" strokeWidth="2" data-original="M5.07849 11V60"></path>
                 <path className="lineB" d="M15.07 16 C15.07 25.66 15.07 35.33 15.07 45 " stroke="#EEEEF2" strokeWidth="2" data-original="M15.0785 16V45"></path>

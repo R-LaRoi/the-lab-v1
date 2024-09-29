@@ -16,9 +16,9 @@ export default function Model() {
     });
 
     const materialProps = ({
-        color: { value: ' #FF3131' }, // Default color
+        color: { value: ' #FF3131' }, 
         thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-        roughness: { value: 0.1, min: 0, max: 1, step: 0.1 }, // Adjusted for glass effect
+        roughness: { value: 0.1, min: 0, max: 1, step: 0.1 }, 
         transmission: { value: 1, min: 0, max: 1, step: 0.1 },
         ior: { value: 1.5, min: 1.0, max: 3.0, step: 0.1 },
         chromaticAberration: { value: 0.02, min: 0, max: 1 },
@@ -44,5 +44,5 @@ export default function Model() {
     );
 }
 
-// Preload the GLTF model
+
 useGLTF.preload("/media/torrus.glb");
