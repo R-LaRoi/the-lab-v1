@@ -10,7 +10,7 @@ const circleStyle = {
   translate: 'none',
   rotate: 'none',
   scale: 'none',
-  opacity: 0.3,
+  opacity: 0.5,
   transform: 'translate(-50%, -50%) translate(-0.199px, -0.199px)'
 };
 
