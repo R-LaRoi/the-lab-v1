@@ -25,8 +25,8 @@ export default function Home() {
       <main className="intro-container">
         <div className="inner-content flex items-center justify-center h-screen relative">
           <div className="blur-circle" style={circleStyle}></div>
-          <div className="absolute text-white z-0" style={{ fontSize: '14vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
-
+          <div className="absolute text-white z-0" style={{ fontSize: '15vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
+            Creative Web Agency
           </div>
           <ThreeDimension />
         </div>

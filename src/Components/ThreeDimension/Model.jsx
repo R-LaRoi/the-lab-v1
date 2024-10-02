@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import { MeshTransmissionMaterial, useGLTF, Text} from "@react-three/drei";
-import { useFrame, useThree } from '@react-three/fiber'
-
+import { useFrame, useThree, } from '@react-three/fiber'
 
 
 
@@ -9,7 +8,8 @@ export default function Model() {
     const { nodes } = useGLTF("/media/torrus.glb");
     const { viewport } = useThree()
     const torus = useRef(null);
-    
+   
+
     useFrame(() => {
         if (torus.current) {
             torus.current.rotation.x += 0.02
@@ -30,8 +30,8 @@ export default function Model() {
 
     return (
         <group scale={scale} position={[0, 0, -2]}> 
-           <Text  position={[0, 0, -1]} fontSize={0.5} anchorX="center" anchorY="middle">
-             AHLAB 
+           <Text  position={[0, 0, -1]} color="#f2f2f2" fontSize={0.09} anchorX="center" anchorY="middle">
+               AH LAB CREATIVE WEB AGENCY
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>
                 <MeshTransmissionMaterial {...materialProps}/>

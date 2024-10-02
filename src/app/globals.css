@@ -2,22 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* logo colors
- #F2FF01
- rgb(242,255,1)  - yellow
-
- #FF3131 - red
- rgb(255,49,49)
-
- #f2f2f2 - white
- rgb(242,242,242)
- */
-/* 
-new-red
- #DB1436
- rgb(219,20,54) */
-
-:root {
+/ :root {
   --background: #19191b;
   --foreground: #f2ff01;
   --border: #ffff;

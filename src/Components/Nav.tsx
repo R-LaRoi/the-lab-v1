@@ -8,7 +8,6 @@ import Link from "next/link"
 
 
 
-
 const menu = {
   open: { transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] } },
   closed: {
@@ -38,7 +37,7 @@ export const NavBar = (): React.ReactElement => {
           <Image
             src={ahlogo}
             alt="logo"
-            width={60}
+            width={40}
 
             priority
           />
