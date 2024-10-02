@@ -12,16 +12,20 @@
  #f2f2f2 - white
  rgb(242,242,242)
  */
+/* 
+new-red
+ #DB1436
+ rgb(219,20,54) */
 
 :root {
-  --background: #ff3131;
+  --background: #19191b;
   --foreground: #f2ff01;
   --border: #ffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ff3131;
+    --background: #19191b;
     --foreground: #f2ff01;
   }
 }
@@ -46,10 +50,10 @@ body {
 }
 
 .blur-circle {
-  background: radial-gradient(#f2ff01, rgba(107, 121, 238, 0) 70%);
-  border-radius: 50%;
-  height: 70vw;
-  left: 40%;
+  background: radial-gradient(#454545, rgba(107, 121, 238, 0) 70%);
+  border-radius: 20%;
+  height: 50vw;
+  left: 50%;
   opacity: 0;
   position: absolute;
   top: 50%;

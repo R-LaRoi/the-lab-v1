@@ -1,44 +1,41 @@
-import React, { useRef } from 'react';
-import { useGLTF, Text } from "@react-three/drei";
-import { useFrame, useThree } from '@react-three/fiber';
-import * as THREE from 'three';
+import React, { useRef } from 'react'
+import { MeshTransmissionMaterial, useGLTF, Text} from "@react-three/drei";
+import { useFrame, useThree } from '@react-three/fiber'
+
+
+
 
 export default function Model() {
     const { nodes } = useGLTF("/media/torrus.glb");
-    const { viewport } = useThree();
+    const { viewport } = useThree()
     const torus = useRef(null);
     
-const color = new THREE.Color("rgb(255,49,49)");
     useFrame(() => {
         if (torus.current) {
-            torus.current.rotation.x += 0.02;
+            torus.current.rotation.x += 0.02
         }
-    });
+    })
 
-    const materialProps = ({
-        color: color, 
-        thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
+    const materialProps = {
+        thickness: 0.2,
+        roughness: 0,
+        transmission: 1,
+        ior: 1.2,
+        chromaticAberration: 0.02,
+        backside: true,
+    }
     
-    });
     
+    const scale = viewport.width / 1
+
     return (
-        <group scale={viewport.width / 2.25}>
-            <Text position={[0, 0, -1]} fontSize={0.5} color="white" anchorX="center" anchorY="middle">
-          
+        <group scale={scale} position={[0, 0, -2]}> 
+           <Text  position={[0, 0, -1]} fontSize={0.5} anchorX="center" anchorY="middle">
+             AHLAB 
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>
-                <meshPhysicalMaterial 
-                    color={materialProps.color}
-                    transparent={false}
-                    opacity={.3}
-                    // roughness={materialProps.roughness}
-                    // transmission={materialProps.transmission}
-                    ior={materialProps.ior}
-                />
+                <MeshTransmissionMaterial {...materialProps}/>
             </mesh>
         </group>
-    );
+    )
 }
-
-
-useGLTF.preload("/media/torrus.glb");

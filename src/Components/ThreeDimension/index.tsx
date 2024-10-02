@@ -5,13 +5,16 @@ import { Environment } from '@react-three/drei'
 
 export default function Index() {
   return (
-    <Canvas style={{ height: '370px', width: '100%', background: 'radial-gradient(#FF3131, rgba(110, 121, 238, 0) 60%)', marginTop: '30px' }}>
 
+
+    <Canvas style={{ width: '50%', }}>
       <Model />
-      <directionalLight intensity={2} position={[10, 8
-        , 2]} />
+      <directionalLight intensity={2} position={[0, 2, 3]} />
+
       <Environment preset="city" />
 
-    </Canvas>
+    </ Canvas>
+
+
   )
 }

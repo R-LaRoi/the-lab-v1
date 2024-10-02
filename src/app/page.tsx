@@ -6,6 +6,8 @@ const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
   ssr: false,
 
 })
+
+
 const circleStyle = {
   translate: 'none',
   rotate: 'none',
@@ -19,28 +21,16 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="intro-container">
-        <div className="inner-content text-2xl flex items-center justify-center h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2   hero-text">
-            <div className="flex flex-col items-start">
-              <div className="ml-8 left">CREATIVE</div>
-              <div className="blur-circle" style={circleStyle}></div>
-              <ThreeDimension />
 
-            </div>
-            <div className="flex flex-col items-end right">
-              <div className="text-[#F2FF01] mb-3">WEB</div>
-              <div className="mt-20 pt-14">AGENCY</div>
-              <div className="box"></div>
-            </div>
+      <main className="intro-container">
+        <div className="inner-content flex items-center justify-center h-screen relative">
+          <div className="blur-circle" style={circleStyle}></div>
+          <div className="absolute text-white z-0" style={{ fontSize: '14vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
 
           </div>
+          <ThreeDimension />
         </div>
-
-
-
-      </main >
-
+      </main>
 
     </>
   );
