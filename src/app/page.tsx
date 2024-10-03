@@ -1,5 +1,6 @@
 import { NavBar } from "@/Components/Nav";
 import dynamic from 'next/dynamic'
+import MainTwo from "@/Components/MainTwo";
 
 
 const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
@@ -23,13 +24,15 @@ export default function Home() {
       <NavBar />
 
       <main className="intro-container">
-        <div className="inner-content flex items-center justify-center h-screen relative">
+        <div className="inner-content flex items-center justify-center  h-screen relative">
           <div className="blur-circle" style={circleStyle}></div>
           <div className="absolute text-white z-0" style={{ fontSize: '15vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
             Creative Web Agency
           </div>
           <ThreeDimension />
         </div>
+        <MainTwo />
+
       </main>
 
     </>

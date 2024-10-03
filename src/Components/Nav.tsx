@@ -33,12 +33,11 @@ export const NavBar = (): React.ReactElement => {
 
     <section className="fixed top-5 left-0 w-full flex justify-between items-center p-10 z-[9999]">
       <div className="flex items-center">
-        <div style={{ maxWidth: '100%', height: 'auto' }}>
+        <div style={{ maxWidth: '100%', height: 'auto', filter: 'grayscale(100%)' }}>
           <Image
             src={ahlogo}
             alt="logo"
             width={40}
-
             priority
           />
         </div>

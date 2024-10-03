@@ -62,6 +62,8 @@ body {
   background: var(--background);
   padding: 2rem;
   overflow: hidden;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .inner-content {
