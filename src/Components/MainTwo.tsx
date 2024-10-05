@@ -18,7 +18,8 @@ export default function MainTwo() {
             </p>
           </div>
           <div className="col-span-2">
-            <p className='text-3xl md:text-4xl lg:text-5xl uppercase w-80 md:w-80 lg:w-96 '>Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</p>
+            <p className='text-3xl md:text-4xl lg:text-5xl uppercase w-80 md:w-80 lg:w-96 '>Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.
+            </p>
           </div>
         </div>
       </div>
