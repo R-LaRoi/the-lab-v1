@@ -37,7 +37,7 @@ export const NavBar = (): React.ReactElement => {
           <Image
             src={ahlogo}
             alt="logo"
-            width={40}
+            width={50}
             priority
           />
         </div>
@@ -103,7 +103,7 @@ export const NavBar = (): React.ReactElement => {
 
 
           <div onClick={showNavMenu} className="button mr-8 pr-8 hover cursor-pointer">
-            <svg width="30" height="45" viewBox="0 0 30 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="40" height="55" viewBox="0 0 30 61" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_1490_325)">
                 <path className="lineA" d="M5.07 11 C5.07 27.33 5.07 43.66 5.07 60 " stroke="#EEEEF2" strokeWidth="2" data-original="M5.07849 11V60"></path>
                 <path className="lineB" d="M15.07 16 C15.07 25.66 15.07 35.33 15.07 45 " stroke="#EEEEF2" strokeWidth="2" data-original="M15.0785 16V45"></path>

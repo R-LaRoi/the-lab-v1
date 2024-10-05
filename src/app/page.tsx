@@ -1,12 +1,9 @@
 import { NavBar } from "@/Components/Nav";
-import dynamic from 'next/dynamic'
+
 import MainTwo from "@/Components/MainTwo";
+import Text from '@/Components/Text'
 
 
-const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
-  ssr: false,
-
-})
 
 
 const circleStyle = {
@@ -27,9 +24,12 @@ export default function Home() {
         <div className="inner-content flex items-center justify-center  h-screen relative">
           <div className="blur-circle" style={circleStyle}></div>
           <div className="absolute text-white z-0" style={{ fontSize: '15vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
-            Creative Web Agency
+            {/* Creative Web Agency */}
           </div>
-          <ThreeDimension />
+          <div className="container mx-auto p-4">
+            <Text />
+          </div>
+
         </div>
         <MainTwo />
 

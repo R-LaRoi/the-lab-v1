@@ -102,3 +102,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.canvas {
+  margin-top: 20%;
+  margin-left: 10%;
+}

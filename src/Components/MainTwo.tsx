@@ -9,7 +9,6 @@ export default function MainTwo() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-4 gap-4">
           <div className="col-span-1">
-
             <p>mission</p>
           </div>
           <div className="col-span-1">
