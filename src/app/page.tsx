@@ -21,15 +21,11 @@ export default function Home() {
       <NavBar />
 
       <main className="intro-container">
-        <div className="inner-content flex items-center justify-center  h-screen relative">
+        <div className="inner-content flex items-center h-screen relative">
           <div className="blur-circle" style={circleStyle}></div>
-          <div className="absolute text-white z-0" style={{ fontSize: '15vw', whiteSpace: 'nowrap', textAlign: 'center', width: '100%', left: 0 }}>
-            {/* Creative Web Agency */}
-          </div>
           <div className="container mx-auto p-4">
             <Text />
           </div>
-
         </div>
         <MainTwo />
 
