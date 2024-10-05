@@ -35,9 +35,9 @@ body {
 }
 
 .blur-circle {
-  background: radial-gradient(#454545, rgba(107, 121, 238, 0) 70%);
+  background: radial-gradient(#5a5a5a, rgba(107, 121, 238, 0) 70%);
   border-radius: 20%;
-  height: 50vw;
+  height: 65vw;
   left: 50%;
   opacity: 0;
   position: absolute;
@@ -47,7 +47,7 @@ body {
   -webkit-transform: translate(-50%, -50%) scale(0.25);
   -o-transform: translate(-50%, -50%) scale(0.25);
   -ms-transform: translate(-50%, -50%) scale(0.25);
-  width: 60vw;
+  width: 65vw;
   z-index: -1;
 }
 
