@@ -20,10 +20,10 @@ export default function MainProjects({ }: Props) {
           </div>
 
 
-          <video playsInline autoPlay muted loop className="col-2 rounded-2xl" id='jmp'>
+          <video playsInline autoPlay muted loop className="col-2 rounded-2xl" >
             <source
               src="
-https://github.com/R-LaRoi/st-roi-studio/assets/114012059/1688da29-1d1f-48f3-beac-26f6a22d6135"
+https://github.com/user-attachments/assets/fc1b9ab7-89e1-4b81-97a6-ade972dfe0cf"
               type="video/mp4"
             />
           </video>
