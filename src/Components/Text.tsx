@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic'
-// import Link from 'next/link';
+
 
 const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
   ssr: false,
@@ -13,8 +13,8 @@ export default function MainText() {
     <>
       <div className="font-bold leading-none p-1 mt-[-12%] relative" >
         <div className="flex justify-between items-end mb-[-0.45em] w-[85%] mx-auto uppercase" >
-          <div className="w-[75%]">Creative</div> {/* Adjusted width */}
-          <div className="w-[70%] text-right">Web</div> {/* Adjusted width and alignment */}
+          <div className="w-[75%]">Creative</div>
+          <div className="w-[70%] text-right">Web</div>
         </ div>
         <div className="text-right
          mt-12 w-[92%] text-right uppercase">Studio</div>
@@ -45,7 +45,7 @@ export default function MainText() {
 
       </div>
       <div className='mt-4'>
-        {/* <ThreeDimension /> */}
+        <ThreeDimension />
       </div>
     </>
   )

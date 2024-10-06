@@ -4,8 +4,6 @@ import MainTwo from "@/Components/MainTwo";
 import Text from '@/Components/Text'
 
 
-
-
 const circleStyle = {
   translate: 'none',
   rotate: 'none',
