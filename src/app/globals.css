@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/ :root {
+:root {
   --background: #19191b;
   --foreground: #f2ff01;
   --border: #ffff;
@@ -80,21 +80,6 @@ body {
 .inner-content::-webkit-scrollbar {
   display: none;
 }
-
-/* .box {
-  font-size: 0.5rem;
-  align-items: center;
-  border: 1px solid rgba(238, 238, 242, 0.1);
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  line-height: 1;
-  margin-top: 5rem;
-  overflow: hidden;
-  padding: 1.5em 2.25em;
-  position: relative;
-  width: 90%;
-} */
 
 @layer utilities {
   .text-balance {
