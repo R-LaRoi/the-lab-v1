@@ -1,5 +1,5 @@
 import { NavBar } from "@/Components/Nav";
-
+import MainProjects from "@/Components/MainProjects";
 import MainTwo from "@/Components/MainTwo";
 import Text from '@/Components/Text'
 
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <MainTwo />
-
+        <MainProjects />
       </main>
 
     </>

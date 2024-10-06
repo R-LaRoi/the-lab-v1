@@ -37,15 +37,15 @@ export default function MainText() {
 
         </div>
         <div className='text-sm uppercase sub-text flex justify-end'>
-          <div className='absolute right-[10%] text-xs uppercase sub-text mt-14 pt-12 max-w-[20%]'>
+          <div className='absolute sm:right-[10%] left-[5%] sm:left-auto text-sm uppercase sub-text mt-14 pt-12 w-[80%] sm:max-w-[80%]'>
             Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.
-
           </div>
         </div>
-
       </div>
+
+
       <div className='mt-4'>
-        <ThreeDimension />
+        {/* <ThreeDimension /> */}
       </div>
     </>
   )

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/ :root {
   --background: #19191b;
   --foreground: #f2ff01;
   --border: #ffff;
@@ -36,7 +36,6 @@ body {
 
 .blur-circle {
   background: radial-gradient(#5a5a5a, rgba(107, 121, 238, 0) 70%);
-
   height: 65vw;
   left: 30%;
   opacity: 0;
@@ -102,4 +101,39 @@ body {
   line-height: 20px;
   font-family: "Arial";
   font-weight: 100;
+}
+
+@media (max-width: 767px) {
+  .sub-text {
+    width: 50%;
+  }
+}
+
+.line-anim {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  font-size: 11vw;
+  font-family: var(--font-tunnels);
+  line-height: 0.9;
+  padding: 2rem;
+}
+
+.project-grid {
+  padding-left: 9.5vw;
+  padding-right: 9.5vw;
+}
+.col-2 {
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }
