@@ -7,7 +7,7 @@ export default function MainTwo() {
     <>
       <div className="grid grid-cols-1 mt-[20%] mx-[5%] md:mx-[10%] md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-1">
-          <p className="mb-4 md:mb-0">mission</p>
+          <p className="mb-4 md:mb-0 uppercase text-xs">mission</p>
         </div>
         <div className="col-span-1 md:col-span-1">
           <p className='uppercase text-xs pb-8 mb-6'>
