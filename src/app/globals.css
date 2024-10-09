@@ -137,3 +137,25 @@ body {
   right: 0;
   overflow: hidden;
 }
+
+.loader-body {
+  background: #19191b;
+  height: 100vh;
+}
+
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 5rem;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 2s steps(11) infinite;
+}
+.loader:before {
+  content: "A H L A B ";
+}
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -1ch 0 0);
+  }
+}
