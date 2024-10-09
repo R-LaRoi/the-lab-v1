@@ -45,7 +45,7 @@ export default function MainText() {
 
 
       <div className='mt-4'>
-        {/* <ThreeDimension /> */}
+        <ThreeDimension />
       </div>
     </>
   )
