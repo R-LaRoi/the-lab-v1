@@ -1,5 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic'
+import AnimatedText from './Animations/AnimatePresence';
+
 
 
 const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
@@ -9,11 +11,15 @@ const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
 
 export default function MainText() {
 
+
   return (
     <>
       <div className="font-bold leading-none p-1 mt-[-12%] relative" >
         <div className="flex justify-between items-end mb-[-0.45em] w-[85%] mx-auto uppercase" >
-          <div className="w-[75%]">Creative</div>
+
+          <div className="w-[75%]">
+            Creative</div>
+
           <div className="w-[70%] text-right">Web</div>
         </ div>
         <div className="text-right
@@ -38,7 +44,7 @@ export default function MainText() {
         </div>
         <div className='text-sm uppercase sub-text flex justify-end'>
           <div className='absolute sm:right-[10%] left-[5%] sm:left-auto text-sm uppercase sub-text mt-14 pt-12 w-[80%] sm:max-w-[80%]'>
-            Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.
+            <AnimatedText text="Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences." />
           </div>
         </div>
       </div>
