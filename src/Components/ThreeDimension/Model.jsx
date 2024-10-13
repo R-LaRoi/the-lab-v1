@@ -30,7 +30,7 @@ export default function Model() {
 
     return (
         <group scale={scale} position={[0, 0, -2]}> 
-           <Text  position={[0, 0, -1]} color="#f2f2f2" fontSize={0.09} anchorX="center" anchorY="middle">
+           <Text  position={[0, 0, -1]} color="#f2f2f2" fontSize={0.09} anchorX='center' anchorY='middle'>
                AH LAB CREATIVE WEB AGENCY
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>

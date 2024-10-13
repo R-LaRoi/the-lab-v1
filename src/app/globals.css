@@ -35,7 +35,7 @@ body {
 }
 
 .blur-circle {
-  background: radial-gradient(#5a5a5a, rgba(107, 121, 238, 0) 70%);
+  background: radial-gradient(#5a5a5a, rgba(107, 121, 238, 0) 60%);
   height: 65vw;
   left: 30%;
   opacity: 0;
@@ -138,24 +138,24 @@ body {
   overflow: hidden;
 }
 
-.loader-body {
-  background: #19191b;
-  height: 100vh;
+.web {
+  color: #2a2a2c;
 }
 
-.loader {
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 5rem;
-  clip-path: inset(0 100% 0 0);
-  animation: l5 2s steps(11) infinite;
+/* loading page ---------------------- */
+.loader-body {
+  height: 100vh;
 }
-.loader:before {
-  content: "A H L A B ";
-}
-@keyframes l5 {
-  to {
-    clip-path: inset(0 -1ch 0 0);
-  }
+.example {
+  background: var(--background);
+  font-family: var(--font-tunnels);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  color: #1e1e20;
+  font-size: 35.5vw;
+  letter-spacing: 10px;
 }
