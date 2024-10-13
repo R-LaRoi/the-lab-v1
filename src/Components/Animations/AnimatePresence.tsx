@@ -20,7 +20,7 @@ export default function AnimatedText({ text }: Props) {
             visible: (i: number) => ({
               y: 0,
               transition: {
-                delay: i * 0.1
+                delay: i * 0.3
               }
             })
           }}
