@@ -4,10 +4,10 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
   children: JSX.Element;
-  // width?: 'fit-content' | "100%"
+
 };
 
-export default function Reveal({ children, width = 'fit-content' }: Props) {
+export default function Reveal({ children }: Props) {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
