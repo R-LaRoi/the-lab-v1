@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function MainProjects() {
 
-  const word = "ama's"
+
 
   return (
     <div className='project-grid'>
@@ -54,7 +54,7 @@ export default function MainProjects() {
         <div className='flex flex-col mt-[15%] md:flex-row  gap-12'>
           <div className='md:w-1/2'>
             <div className='title'>
-              <div>{word}</div>
+              <div>amas</div>
               <div>haus</div>
 
 
