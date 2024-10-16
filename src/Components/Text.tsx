@@ -15,19 +15,22 @@ export default function MainText() {
   return (
     <>
       <div className='font-bold leading-none p-1 mt-[-8%] relative' >
-        <div className='flex justify-between items-end mb-[-0.45em] mx-auto uppercase' >
-          <div className='w-[95%]'>
+        <div className='flex justify-between items-end mb-[-0.45em] mx-auto uppercase mobile-adjust'>
+          <div className='w-[100%]'>
             <StaggerText text='Creative' />
           </div>
-          <div className='w-[75%] text-right web'>       <StaggerText text='WEB' /></div>
-        </ div>
-        <div className='text-right
-         mt-12 w-[100%] text-right uppercase'>       <StaggerText text='Studio' /></div>
-        <div className='flex justify-end main-link'>
+          <div className='w-[75%] text-right web'>
+            <StaggerText text='WEB' />
+          </div>
+        </div>
+        <div className='text-right mt-12 w-[100%] text-right uppercase mobile-adjust'>
+          <StaggerText text='Studio' />
+        </div>
+        <div className='flex justify-end main-link mobile-adjust'>
           <div className='text-xl inline-flex items-center justify-between 
-      py-6 px-5 border border-[rgba(238,238,242,0.1)] rounded-md 
-      overflow-hidden relative leading-none
-      w-[45%] mt-12 mr-[-14%]'>
+    py-6 px-5 border border-[rgba(238,238,242,0.1)] rounded-md 
+    overflow-hidden relative leading-none
+    w-[45%] mt-12 mr-[-14%]'>
             <div>projects</div>
             <i className='mx-2'>
               <svg viewBox='0 0 56 12' fill='none' xmlns='http://www.w3.org/2000/svg' className='w-14 h-3'>
@@ -37,10 +40,10 @@ export default function MainText() {
               </svg>
             </i>
             <div>2024</div>
-
           </div>
-
         </div>
+
+
         <div className='text-sm uppercase sub-text flex justify-end'>
           <div className='absolute sm:right-[10%] left-[5%] sm:left-auto text-sm uppercase sub-text mt-14 pt-12 w-[80%] sm:max-w-[80%]'>
             <Reveal>

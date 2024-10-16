@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 
 interface StaggerTextProps {
   text: string;
+  className?: string;
 }
 
 
-export default function StaggerText({ text }: StaggerTextProps) {
+export default function StaggerText({ text, className }: StaggerTextProps) {
 
   const AnimationProps = {
     initial: { opacity: 0, y: 0 },
     animate: { opacity: 1, y: 10 },
   };
   return (
-    <div>
-
+    <div className={className}>
       <span className="sr-only">{text}</span>
 
       <motion.span
