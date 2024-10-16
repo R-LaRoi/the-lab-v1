@@ -2,10 +2,10 @@ import React from 'react'
 import Marquee from './Animations/Marquee'
 
 type Props = {
-
+  links: string;
 }
 
-export default function Footer({ }: Props) {
+export default function Footer({ links }: Props) {
   return (
 
     <>
