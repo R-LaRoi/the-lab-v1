@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import TextScramble, { ScrambleTexts } from '@twistezo/react-text-scramble'
 
+interface ScrambleProps {
+  text: string;
 
-const scrambleTexts: ScrambleTexts = [
-  'AH LAB',
-]
+}
 
-export default function Scramble() {
+
+
+export default function Scramble({ text }: ScrambleProps) {
   const [isClient, setIsClient] = useState(false)
-
+  const scrambleTexts: ScrambleTexts = [text];
   useEffect(() => {
     setIsClient(true)
   }, [])

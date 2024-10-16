@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--border);
+  /* background-color: var(--border); */
   color: #eeeef2;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -35,7 +35,7 @@ body {
 }
 
 .blur-circle {
-  background: radial-gradient(#5a5a5a, rgba(107, 121, 238, 0) 60%);
+  background: radial-gradient(#292929, rgba(107, 121, 238, 0) 60%);
   height: 65vw;
   left: 30%;
   opacity: 0;
@@ -58,7 +58,7 @@ body {
   bottom: 0.7rem;
   z-index: 1;
   border-radius: 20px;
-  background: var(--background);
+  background: #f1f1f1;
   padding: 2rem;
   overflow: hidden;
   overflow-y: auto;
@@ -66,16 +66,11 @@ body {
 }
 
 .inner-content {
-  font-size: 15.5vw;
-  font-family: var(--font-tunnels);
+  font-size: 13.5vw;
+  font-family: var(--font-etna);
+  color: #292929;
 }
 
-.left {
-  margin-left: 10%;
-}
-.right {
-  margin-right: 5%;
-}
 .inner-content::-webkit-scrollbar {
   display: none;
 }
@@ -117,8 +112,8 @@ body {
 }
 
 .title {
-  font-size: 11vw;
-  font-family: var(--font-tunnels);
+  font-size: 9vw;
+  font-family: var(--font-etna);
   line-height: 0.9;
   padding: 2rem;
 }
@@ -139,7 +134,8 @@ body {
 }
 
 .web {
-  color: #2a2a2c;
+  /* color: #2a2a2c; */
+  color: #f1fd03;
 }
 
 /* loading page ---------------------- */
@@ -147,8 +143,8 @@ body {
   height: 100vh;
 }
 .example {
-  background: var(--background);
-  font-family: var(--font-tunnels);
+  /* background: var(--background); */
+  font-family: var(--font-etna);
   position: fixed;
   top: 0;
   left: 0;

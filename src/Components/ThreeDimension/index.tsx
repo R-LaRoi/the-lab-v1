@@ -8,7 +8,7 @@ export default function Index() {
 
 
     <div className='absolute inset-0 z-10 mt-12 canvas'>
-      <Canvas style={{ width: '45%', marginTop: '1%' }}>
+      <Canvas style={{ width: '45%', }}>
         <Model />
         <directionalLight intensity={2} position={[0, 2, 3]} />
         <Environment preset='city' />

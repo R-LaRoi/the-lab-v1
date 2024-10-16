@@ -14,16 +14,16 @@ export default function MainText() {
 
   return (
     <>
-      <div className='font-bold leading-none p-1 mt-[-8%] relative' >
+      <div className='font-bold leading-none p-1 mt-[-5%] relative' >
         <div className='flex justify-between items-end mb-[-0.45em] mx-auto uppercase mobile-adjust'>
-          <div className='w-[100%]'>
+          <div className='w-full whitespace-nowrap'>
             <StaggerText text='Creative' />
           </div>
-          <div className='w-[75%] text-right web'>
+          <div className='w-[75%] text-right whitespace-nowrap web'>
             <StaggerText text='WEB' />
           </div>
         </div>
-        <div className='text-right mt-12 w-[100%] text-right uppercase mobile-adjust'>
+        <div className='text-right mt-12 w-full uppercase mobile-adjust'>
           <StaggerText text='Studio' />
         </div>
         <div className='flex justify-end main-link mobile-adjust'>

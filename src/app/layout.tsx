@@ -7,9 +7,9 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const tunnels = localFont({
-  src: "./fonts/Tunnels.otf",
-  variable: "--font-tunnels",
+const etna = localFont({
+  src: "./fonts/Etna.otf",
+  variable: "--font-etna",
   weight: "100 900",
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${tunnels.variable} antialiased`}
+        className={`${geistSans.variable} ${etna.variable} antialiased`}
       >
         {children}
       </body>

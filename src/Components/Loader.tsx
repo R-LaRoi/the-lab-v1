@@ -7,8 +7,8 @@ export default function Loader() {
 
   return (
     <section className='loader-body'>
-      <div className='text-center '>
-        <Scramble />
+      <div className='text-center lowercase'>
+        <Scramble text='AHLAB/' />
       </div>
       <div className='loader'>
         <div id='load'>
