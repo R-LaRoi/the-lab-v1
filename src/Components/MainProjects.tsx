@@ -7,7 +7,7 @@ export default function MainProjects() {
 
   return (
     <div className='project-grid'>
-      <div className='h-px bg-white/20 my-8 mx-8 mt-14'>
+      <div className='h-px bg-black/20 my-8 mx-8 mt-14'>
       </div>
       <p className='text-xs p-8 mb-4 md:mb-0 uppercase'>projects</p>
       <div className='pro-inner container mx-auto px-4 w-full relative'>
@@ -41,7 +41,7 @@ export default function MainProjects() {
               <div>atelier</div>
               <div>718<span>.</span></div>
             </div>
-            <div className='h-px bg-white/20 my-8 mx-8 mt-14'>
+            <div className='h-px bg-black/20 my-8 mx-8 mt-14'>
             </div>
             <ul className='px-8'>
               <li>Web Design</li>
@@ -51,16 +51,13 @@ export default function MainProjects() {
             </ul>
           </div>
         </div>
-        <div className='flex flex-col mt-[15%] md:flex-row  gap-12'>
+        <div className='flex flex-col mt-[15%] flex-row-reverse md:flex-row gap-12'>
           <div className='md:w-1/2'>
             <div className='title'>
               <div>amas</div>
               <div>haus</div>
-
-
             </div>
-            <div className='h-px bg-white/20 my-8 mx-8 mt-14'>
-            </div>
+            <div className='h-px bg-black/20 my-8 mx-8 mt-14'></div>
             <ul className='px-8'>
               <li>Web Design</li>
               <li>Shopify eCommerce</li>
@@ -69,9 +66,11 @@ export default function MainProjects() {
             </ul>
           </div>
 
-          <img src='https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216' alt='GitHub user attachment' className='col-2 rounded-2xl' />
-
-
+          <img
+            src='https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216'
+            alt='GitHub user attachment'
+            className='col-2 rounded-2xl'
+          />
         </div>
 
       </div>

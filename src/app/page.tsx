@@ -5,6 +5,7 @@ import MainProjects from '@/Components/MainProjects';
 import MainTwo from '@/Components/MainTwo';
 import Text from '@/Components/Text'
 import Loader from '@/Components/Loader'
+import Footer from '@/Components/Footer';
 
 
 const circleStyle = {
@@ -38,6 +39,7 @@ export default function Home() {
             </div>
             <MainTwo />
             <MainProjects />
+            <Footer />
           </main>
         </>)
         : (<Loader />)
