@@ -1,11 +1,12 @@
 import React from 'react'
 import Marquee from './Animations/Marquee'
 
-type Props = {
-  links: string;
-}
 
-export default function Footer({ links }: Props) {
+const footerLinks1 = ['work', 'services', 'agency', 'contact']
+const footerLinks2 = ['Spotify', 'LINKEDIN', 'AH GROUP']
+
+
+export default function Footer() {
   return (
 
     <>
@@ -15,16 +16,15 @@ export default function Footer({ links }: Props) {
         </Marquee>
       </div>
       <div className=' footer flex justify-between w-full text-xl md:text-3xl  mt-[10%] p-4'>
-        <ul className='flex-none'>
-          <li>WORK</li>
-          <li>SERVICES</li>
-          <li>AGENCY</li>
-          <li>CONTACT</li>
+        <ul className="flex-none">
+          {footerLinks1.map((link, index) => (
+            <li key={index}>{link}</li>
+          ))}
         </ul>
-        <ul className='mx-auto '>
-          <li>LINKEDIN</li>
-          <li>SPOTIFY</li>
-          <li>AH GROUP</li>
+        <ul className='mx-auto lowercase'>
+          {footerLinks2.map((link, index) => (
+            <li key={index}>{link}</li>
+          ))}
         </ul>
 
       </div>
