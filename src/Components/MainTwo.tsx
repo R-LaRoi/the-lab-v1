@@ -5,7 +5,7 @@ import AnimatedText from './Animations/AnimatePresence';
 export default function MainTwo() {
   return (
     <>
-      <div className='grid grid-cols-1 mt-[20%] mx-[5%] md:mx-[10%] md:grid-cols-4 gap-8 text-stone-900'>
+      <div className='grid grid-cols-1 mt-[70%] mx-[5%] md:mx-[10%] md:grid-cols-4 gap-8 text-stone-900'>
         <div className='col-span-1 md:col-span-1'>
           <Reveal>
             <p className='mb-4 md:mb-0 uppercase text-xs'>mission

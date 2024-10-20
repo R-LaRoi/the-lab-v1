@@ -14,26 +14,27 @@ export default function MainText() {
 
   return (
     <>
-      <div className='font-bold leading-none p-1 mt-[60%] relative' >
+      <div className='font-bold leading-none p-1  relative' >
         <div className='mx-auto uppercase mobile-adjust'>
-          <div className=' whitespace-nowrap mt-[60%]'>
+          <div className=' whitespace-nowrap mt-[40%] '>
             <StaggerText text='Creative' />
           </div>
           <br />
-          <div className='w-[75%] mt-[-40%] whitespace-nowrap'>
-            <StaggerText text='WEB' />
+          <div className='w-[75%] whitespace-nowrap mt-[-20%]  web' >
+            <div>WEB</div>
             <br />
-            <div className=' mt-[-50%] text-right whitespace-nowrap w-full uppercase mobile-adjust'>
-              <StaggerText text='Studio' />
-            </div>
+
+          </div>
+          <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-35%] '>
+            <StaggerText text='Studio' />
           </div>
         </div>
 
-        <div className='flex justify-end main-link mobile-adjust'>
-          <div className='text-xl inline-flex items-center justify-between 
-    py-6 px-5 border border-[#292929] rounded-md 
-    overflow-hidden relative leading-none
-    w-[45%] mt-12 mr-[-14%]'>
+        <div className='text-right mt-[-10%] pro-txt' >
+          <div className='text-xl inline-flex items-center justify-between
+          py-6 px-5 border border-[#292929] rounded-md
+        overflow-hidden relative leading-none
+    w-[40%] '>
             <div>projects</div>
             <i className='mx-2'>
               <svg viewBox='0 0 56 12' fill='none' xmlns='http://www.w3.org/2000/svg' className='w-14 h-3'>
@@ -44,16 +45,15 @@ export default function MainText() {
             </i>
             <div>2024</div>
           </div>
-        </div>
+
+          <Reveal>
+            <div className="text-sm uppercase w-[32%] ml-[60%] mt-8 pro-txt">Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</div>
+          </Reveal>
+
+        </div >
 
 
-        <div className="flex justify-end w-full">
-          <div className="text-right">
-            <Reveal>
-              <p className="text-sm uppercase">Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</p>
-            </Reveal>
-          </div>
-        </div>
+
 
         <div className='mt-4'>
           <FloatSvg paths={[
@@ -62,7 +62,7 @@ export default function MainText() {
           ]} />
           {/* <ThreeDimension /> */}
         </div>
-      </div>
+      </div >
     </>
   )
 }
