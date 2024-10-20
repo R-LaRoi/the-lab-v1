@@ -1,9 +1,10 @@
 import React from 'react'
+import dynamic from 'next/dynamic';
+
+const DynamicVideo = dynamic(() => import('./Video'), { ssr: false });
 
 
 export default function MainProjects() {
-
-
 
   return (
     <div className='project-grid'>
@@ -24,16 +25,15 @@ export default function MainProjects() {
           </div>
 
           <video playsInline autoPlay muted loop className='col-2 rounded-2xl' >
-            <source
-              src='https://github.com/user-attachments/assets/513eb1cb-137e-44af-a649-899a1555c0f2'
-              type='video/mp4' />
+            <DynamicVideo videoSrc="https://github.com/user-attachments/assets/513eb1cb-137e-44af-a649-899a1555c0f2" />
+
           </video>
         </div>
         <div className='flex flex-col mt-[15%] md:flex-row  gap-12'>
           <video playsInline autoPlay muted loop className='col-2 rounded-2xl' >
-            <source
-              src='https://github.com/user-attachments/assets/aac47a8b-88ce-457c-9f7d-ce287a89dec2'
-              type='video/mp4' />
+
+
+            <DynamicVideo videoSrc="https://github.com/user-attachments/assets/aac47a8b-88ce-457c-9f7d-ce287a89dec2" />
           </video>
 
           <div className='md:w-1/2'>

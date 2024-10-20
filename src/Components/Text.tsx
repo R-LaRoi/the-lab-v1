@@ -1,20 +1,20 @@
 import React from 'react';
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import Reveal from './Animations/Reveal';
 import StaggerText from './Animations/StaggerText';
+import FloatSvg from './Animations/FloatSvg';
 
 
-const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
-  ssr: false,
-})
+// const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
+//   ssr: false,
+// })
 
 
 export default function MainText() {
 
-
   return (
     <>
-      <div className='font-bold leading-none p-1 mt-[-5%] relative' >
+      <div className='font-bold leading-none p-1 mt-[50%] relative' >
         <div className='flex justify-between items-end mb-[-0.45em] mx-auto uppercase mobile-adjust'>
           <div className='w-full whitespace-nowrap'>
             <StaggerText text='Creative' />
@@ -53,9 +53,12 @@ export default function MainText() {
         </div>
       </div>
 
-
       <div className='mt-4'>
-        <ThreeDimension />
+        <FloatSvg paths={[
+          "M150,150 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0",
+          "M150,150 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0",
+        ]} />
+        {/* <ThreeDimension /> */}
       </div>
     </>
   )

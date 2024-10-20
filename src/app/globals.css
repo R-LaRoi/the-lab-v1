@@ -17,23 +17,9 @@
 
 body {
   color: #292929;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -ms-scroll-chaining: none;
-  opacity: 1;
-  overscroll-behavior: none;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-  font-family: Suisse Intl, Open Sans, Helvetica, sans-serif;
-  overflow: hidden;
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-property: opacity, background, color;
 }
 
-.blur-circle {
+/* .blur-circle {
   background: radial-gradient(#292929, rgba(107, 121, 238, 0) 35%);
   height: 60vw;
   left: 20%;
@@ -47,7 +33,7 @@ body {
   -ms-transform: translate(-50%, -50%) scale(0.25);
   width: 65vw;
   z-index: -1;
-}
+} */
 
 .intro-container {
   position: fixed;
@@ -70,9 +56,10 @@ body {
 }
 
 .inner-content {
-  font-size: 13.5vw;
-  font-family: var(--font-etna);
+  font-size: 15.5vw;
+  font-family: var(--font-tunnels);
   color: #292929;
+  width: 50%;
 }
 
 .inner-content::-webkit-scrollbar {
@@ -85,10 +72,6 @@ body {
   }
 }
 
-.canvas {
-  margin-top: 20%;
-  margin-left: 10%;
-}
 .main-link {
   margin-top: -1%;
   margin-right: 12%;
@@ -189,4 +172,69 @@ body {
 
 .footer {
   line-height: 0.9;
+}
+
+.stairs {
+  .transition-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 2;
+    div {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+  }
+  .transition-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes morph {
+  0% {
+    d: path(
+      "M150,10 C70,10 10,70 10,150 C10,230 70,290 150,290 C230,290 290,230 290,150 C290,70 230,10 150,10 Z"
+    );
+  }
+  50% {
+    d: path(
+      "M150,10 C20,10 10,90 10,150 C10,210 20,290 150,290 C280,290 290,210 290,150 C290,90 280,10 150,10 Z"
+    );
+  }
+  100% {
+    d: path(
+      "M150,10 C70,10 10,70 10,150 C10,230 70,290 150,290 C230,290 290,230 290,150 C290,70 230,10 150,10 Z"
+    );
+  }
+}
+
+#morphPath {
+  animation: morph 8s ease-in-out infinite;
+  fill: #292929;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+svg {
+  animation: float 6s ease-in-out infinite;
 }
