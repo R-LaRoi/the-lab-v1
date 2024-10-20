@@ -14,18 +14,21 @@ export default function MainText() {
 
   return (
     <>
-      <div className='font-bold leading-none p-1 mt-[50%] relative' >
-        <div className='flex justify-between items-end mb-[-0.45em] mx-auto uppercase mobile-adjust'>
-          <div className='w-full whitespace-nowrap'>
+      <div className='font-bold leading-none p-1 mt-[60%] relative' >
+        <div className='mx-auto uppercase mobile-adjust'>
+          <div className=' whitespace-nowrap mt-[60%]'>
             <StaggerText text='Creative' />
           </div>
-          <div className='w-[75%] text-right whitespace-nowrap web'>
+          <br />
+          <div className='w-[75%] mt-[-40%] whitespace-nowrap'>
             <StaggerText text='WEB' />
+            <br />
+            <div className=' mt-[-50%] text-right whitespace-nowrap w-full uppercase mobile-adjust'>
+              <StaggerText text='Studio' />
+            </div>
           </div>
         </div>
-        <div className='text-right mt-12 w-full uppercase mobile-adjust'>
-          <StaggerText text='Studio' />
-        </div>
+
         <div className='flex justify-end main-link mobile-adjust'>
           <div className='text-xl inline-flex items-center justify-between 
     py-6 px-5 border border-[#292929] rounded-md 
@@ -44,21 +47,21 @@ export default function MainText() {
         </div>
 
 
-        <div className='text-sm uppercase sub-text flex justify-end'>
-          <div className='absolute sm:right-[10%] left-[5%] sm:left-auto text-sm uppercase sub-text mt-14 pt-12 w-[80%] sm:max-w-[80%]'>
+        <div className="flex justify-end w-full">
+          <div className="text-right">
             <Reveal>
-              <p>Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</p>
+              <p className="text-sm uppercase">Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</p>
             </Reveal>
           </div>
         </div>
-      </div>
 
-      <div className='mt-4'>
-        <FloatSvg paths={[
-          "M150,150 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0",
-          "M150,150 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0",
-        ]} />
-        {/* <ThreeDimension /> */}
+        <div className='mt-4'>
+          <FloatSvg paths={[
+            "M150,150 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0",
+            "M150,150 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0",
+          ]} />
+          {/* <ThreeDimension /> */}
+        </div>
       </div>
     </>
   )
