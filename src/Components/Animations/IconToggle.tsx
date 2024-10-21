@@ -15,7 +15,7 @@ const ToggleIcon = ({ character, icon }: ToggleProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowCharacter(prev => !prev);
-    }, 1000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
@@ -45,10 +45,14 @@ const ToggleIcon = ({ character, icon }: ToggleProps) => {
         style={{
           opacity: showCharacter ? 0 : 1,
           visibility: showCharacter ? 'hidden' : 'visible',
-          transition: 'opacity 0.3s, visibility 0.3s'
+          transition: 'opacity 0.3s, visibility 0.3s',
+          justifyContent: 'flex-start'
         }}
       >
-        <FontAwesomeIcon icon={icon} />
+        <FontAwesomeIcon icon={icon} style={{
+          position: 'relative', fontSize: '11.5vw',
+          bottom: '20px', right: '160px'
+        }} />
 
       </span>
     </span>

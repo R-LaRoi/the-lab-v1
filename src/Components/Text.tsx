@@ -33,8 +33,8 @@ export default function MainText() {
             <br />
 
           </div>
-          <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-35%] '>
-            Studi <span>  <ToggleIcon character="o" icon={faGlobe} /></span>
+          <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-20%] '>
+            Studi<span><ToggleIcon character="o" icon={faGlobe} /></span>
 
           </div>
         </div>
