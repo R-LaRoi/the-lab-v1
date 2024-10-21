@@ -3,6 +3,9 @@ import React from 'react';
 import Reveal from './Animations/Reveal';
 import StaggerText from './Animations/StaggerText';
 import FloatSvg from './Animations/FloatSvg';
+import ToggleIcon from './Animations/IconToggle';
+import globe from '../app/assets/globe.svg'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 
 // const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
@@ -21,12 +24,18 @@ export default function MainText() {
           </div>
           <br />
           <div className='w-[75%] whitespace-nowrap mt-[-20%]  web' >
-            <div>WEB</div>
+
+            <div>
+
+              WEB
+
+            </div>
             <br />
 
           </div>
           <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-35%] '>
-            <StaggerText text='Studio' />
+            Studi <span>  <ToggleIcon character="o" icon={faGlobe} /></span>
+
           </div>
         </div>
 
