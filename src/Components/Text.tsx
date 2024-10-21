@@ -4,7 +4,6 @@ import Reveal from './Animations/Reveal';
 import StaggerText from './Animations/StaggerText';
 import FloatSvg from './Animations/FloatSvg';
 import ToggleIcon from './Animations/IconToggle';
-import globe from '../app/assets/globe.svg'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 
