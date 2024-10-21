@@ -1,6 +1,7 @@
 import React from 'react'
 import Reveal from './Animations/Reveal';
 import AnimatedText from './Animations/AnimatePresence';
+import StaggerText from './Animations/StaggerText';
 
 export default function MainTwo() {
   return (
@@ -26,6 +27,7 @@ export default function MainTwo() {
             <Reveal>
               <AnimatedText text='We work with awesome people like you to create web experiences that are user-friendly and designed to go places.' />
             </Reveal>
+
           </div>
 
           <div className='mt-14 pt-14 flex space-x-14 uppercase text-xs'>

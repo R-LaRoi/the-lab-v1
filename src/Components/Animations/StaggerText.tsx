@@ -18,7 +18,6 @@ export default function StaggerText({ text, className }: StaggerTextProps) {
   return (
     <div className={className}>
       <span className="sr-only">{text}</span>
-
       <motion.span
         arial-hidden="true"
         className=""
@@ -53,3 +52,6 @@ export default function StaggerText({ text, className }: StaggerTextProps) {
     </div>
   );
 };
+
+
+

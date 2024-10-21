@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const BasisMedium = localFont({
+  src: "./fonts/Basis-Medium.woff",
+  variable: "--font-Basis-Medium",
   weight: "100 900",
 });
-const etna = localFont({
-  src: "./fonts/Etna.otf",
-  variable: "--font-etna",
+const BasisLight = localFont({
+  src: "./fonts/Basis-Light.woff",
+  variable: "--font-Basis-Light",
   weight: "100 900",
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${etna.variable} antialiased`}
+        className={`${BasisLight.variable} ${BasisMedium.variable} antialiased`}
       >
         {children}
       </body>

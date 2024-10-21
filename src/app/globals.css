@@ -56,10 +56,10 @@ body {
 }
 
 .inner-content {
-  font-size: 15.5vw;
-  font-family: var(--font-tunnels);
+  font-size: 16vw;
+  font-family: var(--font-Basis-Medium);
   color: #292929;
-  padding: 2rem;
+  letter-spacing: -4px;
 }
 
 .inner-content::-webkit-scrollbar {
@@ -95,7 +95,7 @@ body {
 
 .title {
   font-size: 9vw;
-  font-family: var(--font-tunnels);
+  font-family: var(--font-Basis-Light);
   line-height: 0.9;
   padding: 2rem;
   color: #292929;
@@ -132,7 +132,7 @@ body {
 }
 .example {
   /* background: var(--background); */
-  font-family: var(--font-etna);
+  font-family: var(--font-Basis-Medium);
   position: fixed;
   top: 0;
   left: 0;
@@ -166,7 +166,7 @@ body {
 }
 
 .marquee {
-  font-family: var(--font-etna);
+  font-family: var(--font-Basis-Medium);
 }
 
 .footer {

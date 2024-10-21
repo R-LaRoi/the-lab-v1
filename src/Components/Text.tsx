@@ -4,7 +4,8 @@ import Reveal from './Animations/Reveal';
 import StaggerText from './Animations/StaggerText';
 import FloatSvg from './Animations/FloatSvg';
 import ToggleIcon from './Animations/IconToggle';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faICursor } from '@fortawesome/free-solid-svg-icons';
+import { faEarlybirds, faSpaceAwesome } from '@fortawesome/free-brands-svg-icons'
 
 
 // const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
@@ -17,27 +18,28 @@ export default function MainText() {
   return (
     <>
       <div className='font-bold leading-none p-1  relative' >
-        <div className='mx-auto uppercase mobile-adjust'>
-          <div className=' whitespace-nowrap mt-[40%] '>
-            <StaggerText text='Creative' />
-          </div>
-          <br />
-          <div className='w-[75%] whitespace-nowrap mt-[-20%]  web' >
-
-            <div>
-
-              WEB
-
+        <Reveal>
+          <div className='mx-auto uppercase mobile-adjust'>
+            <div className=' whitespace-nowrap mt-[40%] '>
+              <span><ToggleIcon character="c" icon={faMoon} /></span>re<span><ToggleIcon character="a" icon={faSpaceAwesome} /></span>tive
             </div>
             <br />
+            <div className='w-[75%] whitespace-nowrap mt-[-21%]  web text-right ' >
 
+              <div>
+
+                WE<span><ToggleIcon character="b" icon={faEarlybirds} /></span>
+
+              </div>
+              <br />
+
+            </div>
+            <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-20%] '>
+              Stud<span><ToggleIcon character="i" icon={faICursor} /></span>o
+
+            </div>
           </div>
-          <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-20%] '>
-            Studi<span><ToggleIcon character="o" icon={faGlobe} /></span>
-
-          </div>
-        </div>
-
+        </Reveal>
         <div className='text-right mt-[-10%] pro-txt' >
           <div className='text-xl inline-flex items-center justify-between
           py-6 px-5 border border-[#292929] rounded-md
