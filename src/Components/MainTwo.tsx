@@ -1,7 +1,7 @@
 import React from 'react'
 import Reveal from './Animations/Reveal';
 import AnimatedText from './Animations/AnimatePresence';
-import StaggerText from './Animations/StaggerText';
+
 
 export default function MainTwo() {
   return (
