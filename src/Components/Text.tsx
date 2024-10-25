@@ -1,12 +1,11 @@
 import React from 'react';
 // import dynamic from 'next/dynamic'
 import Reveal from './Animations/Reveal';
-import StaggerText from './Animations/StaggerText';
+// import StaggerText from './Animations/StaggerText';
 import FloatSvg from './Animations/FloatSvg';
 import ToggleIcon from './Animations/IconToggle';
 import { faMoon, faICursor } from '@fortawesome/free-solid-svg-icons';
 import { faEarlybirds, faSpaceAwesome } from '@fortawesome/free-brands-svg-icons'
-
 
 // const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
 //   ssr: false,
