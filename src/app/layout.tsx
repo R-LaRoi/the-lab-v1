@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const BasisMedium = localFont({
-  src: "./fonts/Basis-Medium.woff",
-  variable: "--font-Basis-Medium",
+const BaseNeueBlack = localFont({
+  src: "./fonts/BaseNeueBlack.tff",
+  variable: "--font-BaseNeue",
   weight: "100 900",
 });
 const BasisLight = localFont({
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${BasisLight.variable} ${BasisMedium.variable} antialiased`}
+        className={`${BasisLight.variable} ${BaseNeueBlack.variable} antialiased`}
       >
         {children}
       </body>

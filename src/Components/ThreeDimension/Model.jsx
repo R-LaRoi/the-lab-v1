@@ -18,24 +18,35 @@ export default function Model() {
 
     const materialProps = {
         thickness: 0.2,
-        roughness: 0,
+        // roughness: 0,
         transmission: 1,
         ior: 1.2,
         chromaticAberration: 0.02,
         backside: true,
+      
     }
     
     
-    const scale = viewport.width / 1
+    const scale = viewport.width / 2
 
     return (
         <group scale={scale} position={[0, 0, -2]}> 
-           <Text  position={[0, 0, -1]} color="#f2f2f2" fontSize={0.09} anchorX='center' anchorY='middle'>
-               AH LAB CREATIVE WEB STUDIO
+           <Text  position={[0, 0, -1]} color='white' fontSize={.5} anchorX='center' anchorY='middle' font={'/fonts/BaseNeueBlack.ttf'}>
+             CREATIVE WEB STUDIO 
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>
                 <MeshTransmissionMaterial {...materialProps}/>
             </mesh>
         </group>
+
+
+        // <group scale={scale} position={[0, 0, -2]}> 
+        //     <Text font={'/fonts/Basis-Medium.woff'} position={[0, 0, -1]} fontSize={0.5} color="white" anchorX="center" anchorY="middle">
+        //         hello world!
+        //     </Text>
+        //     <mesh ref={torus} {...nodes.Torus002}>
+        //         <MeshTransmissionMaterial {...materialProps}/>
+        //     </mesh>
+        // </group>
     )
 }
