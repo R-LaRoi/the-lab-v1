@@ -165,14 +165,6 @@ body {
   }
 }
 
-.marquee {
-  font-family: var(--font-Basis-Medium);
-}
-
-.footer {
-  line-height: 0.9;
-}
-
 .stairs {
   .transition-container {
     position: fixed;

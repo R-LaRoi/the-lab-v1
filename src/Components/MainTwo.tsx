@@ -1,11 +1,18 @@
 import React from 'react'
 import Reveal from './Animations/Reveal';
 import AnimatedText from './Animations/AnimatePresence';
-
+import FloatSvg from './Animations/FloatSvg';
 
 export default function MainTwo() {
   return (
     <>
+      <div className='mt-4'>
+        <FloatSvg paths={[
+          "M150,150 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0",
+          "M150,150 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0",
+        ]} />
+
+      </div>
       <div className='grid grid-cols-1 mt-[70%] mx-[5%] md:mx-[10%] md:grid-cols-4 gap-8 text-stone-900'>
         <div className='col-span-1 md:col-span-1'>
           <Reveal>

@@ -3,10 +3,9 @@ import { useState, useEffect } from 'react';
 import { NavBar } from '@/Components/Nav';
 import MainProjects from '@/Components/MainProjects';
 import MainTwo from '@/Components/MainTwo';
-// import Text from '@/Components/Text'
 import Loader from '@/Components/Loader'
 import Footer from '@/Components/Footer';
-import Hero from '@/Components/Hero';
+
 
 
 const circleStyle = {
@@ -35,12 +34,14 @@ export default function Home() {
             <div className='inner-content flex items-center h-screen relative'>
               <div className='blur-circle' style={circleStyle}></div>
               <div className='container mx-auto p-4'>
-                <Hero />
+
               </div>
             </div>
             <MainTwo />
             <MainProjects />
-            <Footer />
+            <div className='mt-[20%]'>
+              <Footer />
+            </div>
           </main>
         </>)
         : (<Loader />)
