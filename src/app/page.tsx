@@ -35,6 +35,7 @@ export default function Home() {
               <div className='blur-circle' style={circleStyle}></div>
               <div className='container mx-auto p-4'>
 
+
               </div>
             </div>
             <MainTwo />

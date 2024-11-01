@@ -19,7 +19,7 @@ body {
   color: #292929;
 }
 
-/* .blur-circle {
+.blur-circle {
   background: radial-gradient(#f2ff01, rgba(107, 121, 238, 0) 35%);
   height: 90vw;
   left: 20%;
@@ -33,7 +33,7 @@ body {
   -ms-transform: translate(-50%, -50%) scale(0.25);
   width: 90vw;
   z-index: -1;
-} */
+}
 
 .intro-container {
   position: fixed;

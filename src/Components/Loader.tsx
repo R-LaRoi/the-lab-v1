@@ -1,5 +1,5 @@
 'use client'
-import Scramble from "./Animations/Scramble"
+import LoadVideo from "./LoadVideo"
 
 
 export default function Loader() {
@@ -8,16 +8,11 @@ export default function Loader() {
   return (
 
 
-    <section className='loader-body'>
-      <div className='text-center lowercase'>
-        <Scramble text='AHLAB/' />
-      </div>
-      <div className='loader'>
-        <div id='load'>
-
-        </div>
+    <section className=''>
+      <div>words
 
       </div>
+      <LoadVideo />
     </section>
   )
 

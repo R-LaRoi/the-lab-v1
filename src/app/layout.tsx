@@ -7,11 +7,6 @@ const BaseNeueBlack = localFont({
   variable: "--font-BaseNeue",
   weight: "100 900",
 });
-// const BasisLight = localFont({
-//   src: "./fonts/Basis-Light.woff",
-//   variable: "--font-Basis-Light",
-//   weight: "100 900",
-// });
 
 export const metadata: Metadata = {
   title: "AH Lab",

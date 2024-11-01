@@ -7,7 +7,6 @@ interface ScrambleProps {
 }
 
 
-
 export default function Scramble({ text }: ScrambleProps) {
   const [isClient, setIsClient] = useState(false)
   const scrambleTexts: ScrambleTexts = [text];
