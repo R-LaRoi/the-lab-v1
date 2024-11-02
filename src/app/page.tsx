@@ -5,7 +5,7 @@ import MainProjects from '@/Components/MainProjects';
 import MainTwo from '@/Components/MainTwo';
 import Loader from '@/Components/Loader'
 import Footer from '@/Components/Footer';
-
+import MainText from '@/Components/Text';
 
 
 const circleStyle = {
@@ -34,7 +34,7 @@ export default function Home() {
             <div className='inner-content flex items-center h-screen relative'>
               <div className='blur-circle' style={circleStyle}></div>
               <div className='container mx-auto p-4'>
-
+                <MainText />
 
               </div>
             </div>

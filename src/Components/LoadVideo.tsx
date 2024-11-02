@@ -49,7 +49,7 @@ export default function LoadVideo() {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          fontSize: '3rem',
+          fontSize: '2rem',
           textAlign: 'center'
         }}
       >

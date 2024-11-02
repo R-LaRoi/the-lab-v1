@@ -8,7 +8,7 @@ export default function MainProjects() {
 
   return (
     <div className='project-grid'>
-      <div className='h-px bg-black/20 my-8 mx-8 mt-14'>
+      <div className='h-px bg-black/20 my-8 mx-8 mt-[14]'>
       </div>
       <p className='text-xs p-8 mb-4 md:mb-0 uppercase'>projects</p>
       <div className='pro-inner container mx-auto px-4 w-full relative'>

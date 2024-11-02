@@ -1,53 +1,28 @@
 import React from 'react';
 import Reveal from './Animations/Reveal';
-import FloatSvg from './Animations/FloatSvg';
-import ToggleIcon from './Animations/IconToggle';
-import { faMoon, faICursor } from '@fortawesome/free-solid-svg-icons';
-import { faEarlybirds, faSpaceAwesome } from '@fortawesome/free-brands-svg-icons'
-
-// import dynamic from 'next/dynamic'
-// import StaggerText from './Animations/StaggerText';
-// const ThreeDimension = dynamic(() => import('@/Components/ThreeDimension'), {
-//   ssr: false,
-// })
-
+import Marquee from './Animations/Marquee';
 
 
 export default function MainText() {
 
   return (
     <>
-
-
-
-      <div className='font-bold leading-none p-1  relative' >
+      <div className='font-bold leading-none p-1 relative'>
         <Reveal>
+
           <div className='mx-auto uppercase mobile-adjust'>
-            <div className=' whitespace-nowrap mt-[40%] '>
-              <span><ToggleIcon character="c" icon={faMoon} /></span>re<span><ToggleIcon character="a" icon={faSpaceAwesome} /></span>tive
-            </div>
-            <br />
-            <div className='w-[75%] whitespace-nowrap mt-[-21%]  web text-right ' >
+            <div className='whitespace-nowrap mt-[40%] mar'>
 
-              <div>
-
-                WE<span><ToggleIcon character="b" icon={faEarlybirds} /></span>
-
-              </div>
-              <br />
-
-            </div>
-            <div className=' text-right whitespace-nowrap w-full uppercase mobile-adjust mt-[-20%] '>
-              Stud<span><ToggleIcon character="i" icon={faICursor} /></span>o
+              <Marquee>  DESIGN BEYOND LIMITS</Marquee>
 
             </div>
           </div>
         </Reveal>
-        <div className='text-right mt-[-10%] pro-txt' >
+        <div className='text-center sm:text-right mt-[-10%]  pro-txt '>
           <div className='text-xl inline-flex items-center justify-between
-          py-6 px-5 border border-[#292929] rounded-md
-        overflow-hidden relative leading-none
-    w-[40%] '>
+    py-6 px-5 border border-[#292929] rounded-md
+    overflow-hidden relative leading-none
+    w-full sm:w-[40%] mx-auto mt-10 sm:mt-0'>
             <div>projects</div>
             <i className='mx-2'>
               <svg viewBox='0 0 56 12' fill='none' xmlns='http://www.w3.org/2000/svg' className='w-14 h-3'>
@@ -60,22 +35,16 @@ export default function MainText() {
           </div>
 
           <Reveal>
-            <div className="text-sm uppercase w-[32%] ml-[60%] mt-8 pro-txt">Driven by innovation and creativity, AH LAB transforms ideas into dynamic digital experiences.</div>
+            <div className="text-sm uppercase w-full mt-8 pro-txt">
+              Driven by creativity and innovation, AH LAB transforms concepts into dynamic digital experiences.
+            </div>
           </Reveal>
-
-        </div >
-
-
-
+        </div>
 
         <div className='mt-4'>
-          <FloatSvg paths={[
-            "M150,150 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0",
-            "M150,150 m-120,0 a120,120 0 1,0 240,0 a120,120 0 1,0 -240,0",
-          ]} />
 
         </div>
-      </div >
+      </div>
     </>
   )
 }

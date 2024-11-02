@@ -40,7 +40,7 @@ export const NavBar = (): React.ReactElement => {
             priority
           />
         </div>
-        <small className='ml-12 pl-8'>AH LAB</small>
+        {/* <small className='ml-12 pl-8'>AH LAB</small> */}
       </div>
 
 
@@ -101,13 +101,13 @@ export const NavBar = (): React.ReactElement => {
 
 
           <div onClick={showNavMenu} className='button mr-8 pr-8 hover cursor-pointer'>
-            <svg width='40' height='55' viewBox='0 0 30 61' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <g clipPath='url(#clip0_1490_325)'>
-                <path className='lineA' d='M5.07 11 C5.07 27.33 5.07 43.66 5.07 60 ' stroke='#292929' strokeWidth='2' data-original='M5.07849 11V60'></path>
-                <path className='lineB' d='M15.07 16 C15.07 25.66 15.07 35.33 15.07 45 ' stroke='#292929' strokeWidth='2' data-original='M15.0785 16V45'></path>
-                <path className='lineC' d='M25.07 1 C25.07 17.33 25.07 33.66 25.07 50 ' stroke='#292929' strokeWidth='2' data-original='M25.0784 1V50'></path>
-                <path className='pointA' fillRule='evenodd' clipRule='evenodd' d='M5.07 11 C6.38 10.14 7.69 9.29 9 8.44 9 6.83 9 5.22 9 3.61 7.69 2.74 6.38 1.87 5.07 1 3.74 1.87 2.41 2.74 1.07 3.61 1.05 5.22 1.02 6.83 1 8.44 2.35 9.29 3.71 10.14 5.07 11 ' stroke='#292929' strokeWidth='2' data-original='M5.07843 11L9 8.4482L9 3.61273L5.07843 1L1.07843 3.61273L1 8.4482L5.07843 11Z'></path>
-                <path className='pointB' fillRule='evenodd' clipRule='evenodd' d='M25.07 60 C26.38 59.14 27.69 58.29 29 57.44 29 55.83 29 54.22 29 52.61 27.69 51.74 26.38 50.87 25.07 50 23.74 50.87 22.41 51.74 21.07 52.61 21.05 54.22 21.02 55.83 21 57.44 22.35 58.29 23.71 59.14 25.07 60 ' stroke='#292929' strokeWidth='2' data-original='M25.0784 60L29 57.4482V52.6127L25.0784 50L21.0784 52.6127L21 57.4482L25.0784 60Z'></path>
+            <svg width="61" height="40" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clipPath="url(#clip0_1490_325)">
+                <path className="lineA" d="M11 24.93 C27.33 24.93 43.66 24.93 60 24.93" stroke="#292929" strokeWidth="2" data-original="M11 24.92151H60"></path>
+                <path className="lineB" d="M16 14.93 C25.66 14.93 35.33 14.93 45 14.93" stroke="#292929" strokeWidth="2" data-original="M16 14.9215H45"></path>
+                <path className="lineC" d="M1 4.93 C17.33 4.93 33.66 4.93 50 4.93" stroke="#292929" strokeWidth="2" data-original="M1 4.9216H50"></path>
+                <path className="pointA" fillRule="evenodd" clipRule="evenodd" d="M11 24.93 C10.14 23.62 9.29 22.31 8.44 21 6.83 21 5.22 21 3.61 21 2.74 22.31 1.87 23.62 1 24.93 1.87 26.26 2.74 27.59 3.61 28.93 5.22 28.95 6.83 28.98 8.44 29 9.29 27.65 10.14 26.29 11 24.93" stroke="#292929" strokeWidth="2" data-original="M11 24.92157L8.4482 21L3.61273 21L1 24.92157L3.61273 28.92157L8.4482 29L11 24.92157Z"></path>
+                <path className="pointB" fillRule="evenodd" clipRule="evenodd" d="M60 4.93 C59.14 3.62 58.29 2.31 57.44 1 55.83 1 54.22 1 52.61 1 51.74 2.31 50.87 3.62 50 4.93 50.87 6.26 51.74 7.59 52.61 8.93 54.22 8.95 55.83 8.98 57.44 9 58.29 7.65 59.14 6.29 60 4.93" stroke="#292929" strokeWidth="2" data-original="M60 4.9216L57.4482 1H52.6127L50 4.9216L52.6127 8.9216L57.4482 9L60 4.9216Z"></path>
               </g>
             </svg>
 
