@@ -9,9 +9,6 @@ export default function Loader() {
 
 
     <section className=''>
-      <div>words
-
-      </div>
       <LoadVideo />
     </section>
   )
