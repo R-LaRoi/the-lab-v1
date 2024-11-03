@@ -36,7 +36,7 @@ export default function MainText() {
 
           <Reveal>
             <div className="text-sm uppercase w-full mt-8 pro-txt">
-              Driven by creativity and innovation, AH LAB transforms concepts into dynamic digital experiences.
+              Harness the power of innovation to create digital experiences that captivate, engage, and inspire.
             </div>
           </Reveal>
         </div>

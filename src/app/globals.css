@@ -158,3 +158,96 @@ body {
 svg {
   animation: float 6s ease-in-out infinite;
 }
+
+.container {
+  margin-top: 15vh;
+  min-height: 100vh;
+
+  .body {
+    margin-left: 5vw;
+
+    h1 {
+      margin: 0;
+      margin-top: 10px;
+      font-size: clamp(2rem, 5vw, 5rem);
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: white;
+      margin: 10px 0 0;
+      font-size: clamp(1.5rem, 3vw, 3rem);
+      text-transform: uppercase;
+
+      span {
+        position: relative;
+      }
+    }
+  }
+
+  .images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-top: 5vh;
+
+    .imageContainer {
+      position: absolute;
+
+      img {
+        object-fit: cover;
+      }
+
+      &:nth-of-type(1) {
+        height: 50vh;
+        width: 40vh;
+        z-index: 1;
+      }
+
+      &:nth-of-type(2) {
+        left: 50vw;
+        top: 10vh;
+        height: 35vh;
+        width: 25vh;
+        z-index: 2;
+      }
+
+      &:nth-of-type(3) {
+        left: 25vw;
+        top: 35vh;
+        height: 20vh;
+        width: 15vh;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .images {
+      .imageContainer {
+        &:nth-of-type(1) {
+          height: 40vh;
+          width: 30vh;
+        }
+
+        &:nth-of-type(2) {
+          left: 60vw;
+          top: 5vh;
+          height: 25vh;
+          width: 20vh;
+        }
+
+        &:nth-of-type(3) {
+          left: 10vw;
+          top: 30vh;
+          height: 15vh;
+          width: 12vh;
+        }
+      }
+    }
+  }
+}

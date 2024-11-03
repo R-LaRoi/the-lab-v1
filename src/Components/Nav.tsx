@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import ahlogo from '@/app/assets/ahlab-logo.png'
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
 import Link from 'next/link'
 
 
@@ -28,6 +28,39 @@ export const NavBar = (): React.ReactElement => {
     setNavActive(!navActive)
   }
 
+
+
+  const menuVariants = {
+    closed: {
+      height: 0,
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+    open: {
+      height: "100vh",
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    }
+  };
+
+  const pathVariants = {
+    closed: {
+      d: "M 0 0 Q 50 0 100 0 L 100 0 L 0 0",
+    },
+    open: {
+      d: "M 0 0 Q 50 100 100 0 L 100 100 L 0 100",
+    },
+  };
+
+
+
+
   return (
 
     <section className='fixed top-5 left-0 w-full flex justify-between items-center p-10 z-[9999]'>
@@ -45,8 +78,6 @@ export const NavBar = (): React.ReactElement => {
 
 
 
-
-
       {
         navActive ?
           <>
@@ -58,48 +89,55 @@ export const NavBar = (): React.ReactElement => {
               {/* <Hamburger toggled={navActive} toggle={setNavActive} /> */}
 
             </div>
-            <motion.div
-              variants={menu}
+            <AnimatePresence>
+              <motion.div
+                // variants={menu}
+                animate={navActive ? 'open' : 'closed'}
+                initial='closed'
+                variants={menuVariants}
+                className="bg-black text-white absolute top-0 left-0 w-full overflow-hidden">
+                <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <motion.path
+                    fill="white"
+                    variants={pathVariants}
+                    transition={{
+                      duration: 0.8,
+                      ease: "easeInOut",
+                    }}
+                  />
+                </svg>
+                <div className=''>
 
-              animate={navActive ? 'open' : 'closed'}
+                  <ul className=' nav-list text-left text-zinc-400'>
 
-              initial='closed'>
+                    <Link href='/' ><li className='li-list'>
+                      <span className='number'>00.</span>
+                      <span>services</span>
+                    </li>
 
-              <div className='overlay'>
+                    </Link>
+                    <Link href='/Menu/Work' > <li className='li-list'>
+                      <span className='number'>01.</span><span>work</span>
+                    </li></Link>
+                    <Link href='/Menu/Connect'> <li className='li-list'>
+                      <span className='number'>02.</span><span>studio</span>
+                    </li>
+                    </Link>
 
-                <ul className=' nav-list text-left'>
-
-                  <Link href='/' ><li className='li-list'>
-                    <span className='number'>00.</span>
-                    <span>services</span>
-                  </li>
-
-                  </Link>
-                  <Link href='/Menu/Work' > <li className='li-list'>
-                    <span className='number'>01.</span><span>work</span>
-                  </li></Link>
-                  <Link href='/Menu/Connect'> <li className='li-list'>
-                    <span className='number'>02.</span><span>studio</span>
-                  </li>
-                  </Link>
-
-                  <li className='li-list'>
-                    <span className='number'>03.</span><span><a href='https://www.rachelstroy.com/' target='_blank'> Studio_</a></span>
-                  </li>
+                    <li className='li-list'>
+                      <span className='number'>03.</span><span><a href='https://www.rachelstroy.com/' target='_blank'> Studio_</a></span>
+                    </li>
 
 
-                </ul>
+                  </ul>
 
 
-              </div>
-            </motion.div>
-
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </>
 
-
           :
-
-
           <div onClick={showNavMenu} className='button mr-8 pr-8 hover cursor-pointer'>
             <svg width="61" height="40" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_1490_325)">

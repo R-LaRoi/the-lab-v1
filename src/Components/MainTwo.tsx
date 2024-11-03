@@ -24,7 +24,7 @@ export default function MainTwo() {
         <div className='col-span-1 md:col-span-1'>
           <Reveal>
             <p className='uppercase text-xs pb-8 mb-6'>
-              Creating dynamic interfaces with key features, including user-friendly interactions, animations, and intuitive design, that together cultivate a vibrant and engaging user experience.
+              AH Lab is committed to harnessing the power of innovation to create digital experiences that captivate, engage, and inspire. We believe in the transformative potential of immersive experiences, which blend cutting-edge technology with creative storytelling to cultivate deeper connections between brands and their audiences.
             </p>
           </Reveal>
         </div>
