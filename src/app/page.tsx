@@ -1,12 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { NavBar } from '@/Components/Nav';
-import MainProjects from '@/Components/MainProjects';
+
 import MainTwo from '@/Components/MainTwo';
 import Loader from '@/Components/Loader'
 import Footer from '@/Components/Footer';
 import MainText from '@/Components/Text';
-
+import MainProjects from '@/Components/MainProjects';
 
 const circleStyle = {
   translate: 'none',
