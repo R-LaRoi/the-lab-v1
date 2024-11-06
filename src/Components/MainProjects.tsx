@@ -85,9 +85,10 @@ export default function MainProjects() {
 
   return (
     <section className="section project-grid large-project-grid">
+
       <div className="container">
-        <div className="grid-sub-title">
-          <h5>Recent project</h5>
+        <div className="grid-sub-title  text-sm uppercase">
+          <h5>Projects</h5>
         </div>
         <div className='divider'></div>
         <ul className="project-items">
