@@ -7,17 +7,6 @@ import Link from 'next/link'
 
 
 
-const menu = {
-  open: { transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] } },
-  closed: {
-    top: '0px',
-    right: '0px',
-
-    transition: { duration: 0.75, delay: 0.35, type: 'tween', ease: [0.76, 0, 0.24, 1] }
-
-  }
-
-}
 
 
 
@@ -91,7 +80,7 @@ export const NavBar = (): React.ReactElement => {
             </div>
             <AnimatePresence>
               <motion.div
-                // variants={menu}
+
                 animate={navActive ? 'open' : 'closed'}
                 initial='closed'
                 variants={menuVariants}
