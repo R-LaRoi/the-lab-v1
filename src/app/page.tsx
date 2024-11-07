@@ -1,12 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { NavBar } from '@/Components/Nav';
-
 import MainTwo from '@/Components/MainTwo';
 import Loader from '@/Components/Loader'
 import Footer from '@/Components/Footer';
 import MainText from '@/Components/Text';
 import MainProjects from '@/Components/MainProjects';
+import Lenis from 'lenis';
 
 const circleStyle = {
   translate: 'none',
@@ -24,6 +24,15 @@ export default function Home() {
     setTimeout(() => setLoading(false), 6000)
   }, [])
 
+  // useEffect(() => {
+  //   const lenis = new Lenis()
+  //   function raf(time: number) {
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
+  //   requestAnimationFrame(raf)
+
+  // }, [])
 
   return (
     <>

@@ -6,24 +6,31 @@ interface SplitTextProps extends MotionProps {
 }
 
 export function SplitText({ children, ...rest }: SplitTextProps) {
-  const words = children.split(' ');
+  const lines = children.split('\n');
 
   return (
     <>
-      {words.map((word, i) => (
-        <div
-          key={`${children}-${i}`}
-          style={{ display: 'inline-block', overflow: 'hidden' }}
-        >
+      {lines.map((line, lineIndex) => (
+        <div key={lineIndex} style={{ overflow: 'hidden' }}>
           <motion.div
+            initial={{ y: '100%' }}
+            animate="visible"
+            variants={{
+              visible: {
+                y: 0,
+                transition: {
+                  delay: lineIndex * 1,
+                  duration: 1,
+                  ease: 'easeOut'
+                }
+              }
+            }}
             {...rest}
-            style={{ display: 'inline-block', willChange: 'transform' }}
-            custom={i}
           >
-            {word + (i !== words.length - 1 ? '\u00A0' : '')}
+            {line}
           </motion.div>
         </div>
       ))}
     </>
-  );
+  )
 }

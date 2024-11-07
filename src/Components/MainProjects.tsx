@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-
+import DesktopProjects from '../Components/DesktopProject';
+import MobileProjects from '../Components/MobileProject';
 
 
 interface projectItem {
@@ -51,109 +49,47 @@ const projectItems: projectItem[] = [
   }
 ];
 
-
-
-const scaleAnimation = {
-  initial: { scale: 0, x: "-50%", y: "-50%" },
-  enter: { scale: 1, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] } },
-  closed: { scale: 0, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] } }
-
-}
-
-
 export default function MainProjects() {
-  const [activeItem, setActiveItem] = useState<string | null>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
-
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${e.clientX}px`;
-        cursorRef.current.style.top = `${e.clientY}px`;
-      }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', handleResize);
+    handleResize();
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
+  useEffect(() => {
+    if (!isMobile) {
+      const handleMouseMove = (e: MouseEvent) => {
+        if (cursorRef.current) {
+          cursorRef.current.style.left = `${e.clientX}px`;
+          cursorRef.current.style.top = `${e.clientY}px`;
+        }
+      };
 
+      window.addEventListener('mousemove', handleMouseMove);
+
+      return () => {
+        window.removeEventListener('mousemove', handleMouseMove);
+      };
+    }
+  }, [isMobile]);
 
   return (
-    <section className="section project-grid large-project-grid">
-
-      <div className="container">
-        <div className="grid-sub-title  text-sm uppercase">
-          <h5>Projects</h5>
-        </div>
-        <div className='divider'></div>
-        <ul className="project-items">
-          {projectItems.map((item, index) => (
-            <React.Fragment key={item.id}>
-              <li
-                className="project-item"
-                onMouseEnter={() => setActiveItem(item.id)}
-                onMouseLeave={() => setActiveItem(null)}
-              >
-                <Link href={item.link} className="project-item-content">
-                  <div className="project-item-title">
-                    <h4>{item.title}</h4>
-                  </div>
-                  <div className="project-item-description">
-                    <p>{item.description}</p>
-                  </div>
-                </Link>
-              </li>
-              {index < projectItems.length - 1 && <div className="divider" />}
-            </React.Fragment>
-          ))}
-        </ul>
-        <div className='divider'></div>
-      </div>
-
-      <motion.div
-        variants={scaleAnimation}
-        initial="initial"
-        animate={activeItem ? "enter" : "closed"}
-        className="modal-container"
-      >
-        <div className="modal-slider" style={{ top: projectItems.findIndex(item => item.id === activeItem) * -100 + "%" }}>
-          {projectItems.map((item, index) => (
-            <div className="modal" key={`modal_${index}`}>
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <motion.div
-        ref={cursorRef}
-        className="cursor"
-        variants={scaleAnimation}
-        initial="initial"
-        animate={activeItem ? "enter" : "closed"}
-      ></motion.div>
-      <motion.div
-        className="cursor-label"
-        variants={scaleAnimation}
-        initial="initial"
-        animate={activeItem ? "enter" : "closed"}
-      >
-        View
-      </motion.div>
-    </section>
+    <>
+      {isMobile ? (
+        <MobileProjects projectItems={projectItems} />
+      ) : (
+        <DesktopProjects projectItems={projectItems} cursorRef={cursorRef} />
+      )}
+    </>
   );
-};
-
-
-;
-
+}
