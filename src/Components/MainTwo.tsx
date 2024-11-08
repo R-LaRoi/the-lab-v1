@@ -57,17 +57,17 @@ export default function MainTwo() {
         />
       </div>
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row mx-4 sm:mx-8 md:mx-[6rem] my-8 sm:my-12 md:my-[12rem] gap-6 sm:gap-8 md:gap-12">
+        <div className="flex flex-col md:flex-row mx-4 sm:mx-8 md:mx-[6rem] my-48 sm:my-32 md:my-[12rem] gap-6 sm:gap-8 md:gap-12">
           <div className="w-full md:w-1/3 mt-4 md:mt-0">
             <Reveal>
-              <p className="text-base md:text-md">
+              <p className="text-3xl sm:text-xl ">
                 <b>Design Beyond Limits</b><br />Creating Memorable Experiences for Brands.
               </p>
             </Reveal>
           </div>
           <div className="w-full md:w-2/3">
             <Reveal>
-              <h4 className="text-xl sm:text-2xl md:text-2xl lg:text-xl leading-tight">
+              <h4 className="text-xl sm:text-3xl md:text-3xl lg:text-2xl leading-relaxed">
                 AH Lab is a creative studio dedicated to helping brands thrive in the digital landscape. With a user-centric approach, we transform complexity into seamless simplicity.
               </h4>
             </Reveal>

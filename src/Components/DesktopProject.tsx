@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
 
 interface ProjectItem {
   id: string;
@@ -14,11 +13,16 @@ interface ProjectItem {
 
 interface DesktopProjectsProps {
   projectItems: ProjectItem[];
+  cursorRef: React.RefObject<HTMLDivElement>;
+  scaleAnimation: {
+    initial: object;
+    enter: object;
+    closed: object;
+  };
 }
 
 
-
-export default function DesktopProjects({ projectItems }: DesktopProjectsProps) {
+export default function DesktopProjects({ projectItems, cursorRef, scaleAnimation }: DesktopProjectsProps) {
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
   return (
