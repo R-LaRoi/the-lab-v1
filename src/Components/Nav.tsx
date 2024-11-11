@@ -48,8 +48,6 @@ export const NavBar = (): React.ReactElement => {
   };
 
 
-
-
   return (
 
     <section className='fixed top-5 left-0 w-full flex justify-between items-center p-10 z-[9999]'>
@@ -80,12 +78,11 @@ export const NavBar = (): React.ReactElement => {
             </div>
             <AnimatePresence>
               <motion.div
-
                 animate={navActive ? 'open' : 'closed'}
                 initial='closed'
                 variants={menuVariants}
                 className="bg-black text-white absolute top-0 left-0 w-full overflow-hidden">
-                <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                {/* <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                   <motion.path
                     fill="white"
                     variants={pathVariants}
@@ -94,7 +91,7 @@ export const NavBar = (): React.ReactElement => {
                       ease: "easeInOut",
                     }}
                   />
-                </svg>
+                </svg> */}
                 <div className=''>
 
                   <ul className=' nav-list text-left text-zinc-400'>
