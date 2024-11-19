@@ -1,0 +1,20 @@
+.profile-picture {
+  position: relative;
+  display: inline-flex;
+  border-radius: 50%;
+  background: url("https://github.com/user-attachments/assets/97a54270-e66e-4127-b9bf-9ce6783624f6")
+    center center no-repeat;
+  background-size: cover;
+  width: clamp(1.25em, 2.25vw, 3em);
+  height: clamp(1.25em, 2.25vw, 3em);
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 720px) {
+  .profile-picture {
+    margin-right: 0.125em;
+    height: 1em;
+    width: 1em;
+    transform: translateY(0.1em);
+  }
+}

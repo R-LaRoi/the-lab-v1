@@ -1,10 +1,10 @@
 import React from 'react'
+import '../../src/app/Stylesheets/footer.css'
 
-
-const footerLinks1 = ['work', 'services', 'agency', 'contact']
-const footerLinks2 = ['Spotify', 'LINKEDIN', 'AH GROUP']
-const rotation = 0.00115;
-const translation = -76;
+// const footerLinks1 = ['work', 'services', 'agency', 'contact']
+// const footerLinks2 = ['Spotify', 'LINKEDIN', 'AH GROUP']
+// const rotation = 0.00115;
+// const translation = -76;
 
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className='footer md:flex md:justify-center md:items-end md:h-full'>
           <div className='py-5 px-6 md:py-5 md:px-16 md:w-3/4 h-full w-full flex flex-col justify-between'>
             <div className="flex-grow"></div>
-            <div className="relative mb-16 text-7xl">
+            <div className="relative mb-16 text-5xl">
               <span className=''><div className="profile-picture "></div> Let's work </span><br />
               <span>together</span>
 

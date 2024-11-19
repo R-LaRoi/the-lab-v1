@@ -110,8 +110,7 @@ export default function MainProjects() {
       transition-all duration-300 ease-in-out
       transform hover:scale-105
       text-center
-      inline-block
-    "
+      inline-block"
           >
             <span>more</span>
           </a>

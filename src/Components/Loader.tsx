@@ -8,7 +8,7 @@ export default function Loader() {
   return (
 
 
-    <section className=''>
+    <section className='load-video'>
       <LoadVideo />
     </section>
   )

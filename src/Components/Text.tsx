@@ -13,7 +13,7 @@ export default function MainText() {
           <div className='mx-auto uppercase mobile-adjust'>
             <div className='whitespace-nowrap mt-[40%] mar'>
 
-              <Marquee>  DESIGN BEYOND LIMITS</Marquee>
+              <Marquee>DESIGN BEYOND LIMITS</Marquee>
 
             </div>
           </div>

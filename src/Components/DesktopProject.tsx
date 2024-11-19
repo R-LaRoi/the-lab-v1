@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import '../app/Stylesheets/projects.css'
 
 interface ProjectItem {
   id: string;
@@ -26,9 +27,9 @@ export default function DesktopProjects({ projectItems, cursorRef, scaleAnimatio
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
   return (
-    <section className="section project-grid large-project-grid">
+    <section className="section project-grid">
       <div className="container">
-        <div className="grid-sub-title text-sm uppercase">
+        <div className="text-sm uppercase">
           <h5>Projects</h5>
         </div>
         <div className='divider'></div>
