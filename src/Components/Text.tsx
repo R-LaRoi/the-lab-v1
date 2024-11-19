@@ -18,7 +18,7 @@ export default function MainText() {
             </div>
           </div>
         </Reveal>
-        <div className='text-center sm:text-right mt-[-10%]  pro-txt '>
+        <div className='text-center sm:text-right mt-[-10%]  tracking-[1px]'>
           <div className='text-xl inline-flex items-center justify-between
     py-6 px-5 border border-[#292929] rounded-md
     overflow-hidden relative leading-none
@@ -35,7 +35,7 @@ export default function MainText() {
           </div>
 
           <Reveal>
-            <div className="text-sm uppercase w-full mt-8 pro-txt">
+            <div className="text-sm uppercase w-full mt-8 tracking-[1px]">
               Harness the power of innovation to create digital experiences that captivate, engage, and inspire.
             </div>
           </Reveal>
