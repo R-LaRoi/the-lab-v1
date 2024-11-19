@@ -98,6 +98,25 @@ export default function MainProjects() {
         <DesktopProjects projectItems={projectItems} cursorRef={cursorRef}
           scaleAnimation={scaleAnimation} />
       )}
+      <div>
+        <div className="mb-4 md:mb-0 flex justify-center items-center md:w-full">
+          <a
+            href="#work"
+            className="
+      w-[50%] md:w-[15%]
+      p-4 rounded-full
+      border border-black hover:border-gray-800
+     hover:text-gray-800 text-base
+      transition-all duration-300 ease-in-out
+      transform hover:scale-105
+      text-center
+      inline-block
+    "
+          >
+            <span>more</span>
+          </a>
+        </div>
+      </div>
     </>
   );
 }

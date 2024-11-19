@@ -45,6 +45,7 @@ export default function MobileProjects({ projectItems }: MobileProjectsProps) {
           </li>
         ))}
       </ul>
+
     </div>
   );
 }
