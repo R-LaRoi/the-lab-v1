@@ -6,15 +6,9 @@ import Loader from '@/Components/Loader'
 import Footer from '@/Components/Footer';
 import MainText from '@/Components/Text';
 import MainProjects from '@/Components/MainProjects';
-import Lenis from 'lenis';
 
-const circleStyle = {
-  translate: 'none',
-  rotate: 'none',
-  scale: 'none',
-  opacity: 0.5,
-  transform: 'translate(-50%, -50%) translate(-0.199px, -0.199px)'
-};
+
+
 
 
 export default function Home() {
@@ -24,15 +18,7 @@ export default function Home() {
     setTimeout(() => setLoading(false), 6000)
   }, [])
 
-  // useEffect(() => {
-  //   const lenis = new Lenis()
-  //   function raf(time: number) {
-  //     lenis.raf(time)
-  //     requestAnimationFrame(raf)
-  //   }
-  //   requestAnimationFrame(raf)
 
-  // }, [])
 
   return (
     <>
@@ -41,7 +27,7 @@ export default function Home() {
           <NavBar />
           <main className='intro-container'>
             <div className='inner-content flex items-center h-screen relative'>
-              <div className='blur-circle' style={circleStyle}></div>
+
               <div className='container mx-auto p-4'>
                 <MainText />
 
