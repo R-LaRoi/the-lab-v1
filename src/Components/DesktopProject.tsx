@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import '../app/Stylesheets/projects.css'
 
 interface ProjectItem {
@@ -15,13 +15,15 @@ interface ProjectItem {
 interface DesktopProjectsProps {
   projectItems: ProjectItem[];
   cursorRef: React.RefObject<HTMLDivElement>;
-  scaleAnimation: {
-    initial: object;
-    enter: object;
-    closed: object;
-  };
+  scaleAnimation: ScaleAnimation;
 }
 
+
+interface ScaleAnimation extends Variants {
+  initial: { opacity: number; scale: number };
+  enter: { opacity: number; scale: number };
+  closed: { opacity: number; scale: number };
+}
 
 export default function DesktopProjects({ projectItems, cursorRef, scaleAnimation }: DesktopProjectsProps) {
   const [activeItem, setActiveItem] = useState<string | null>(null);
