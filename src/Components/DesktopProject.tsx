@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import '../app/Stylesheets/projects.css'
+import '../app/Stylesheets/projects.css';
 
 interface ProjectItem {
   id: string;
@@ -12,20 +12,19 @@ interface ProjectItem {
   image: string;
 }
 
-interface DesktopProjectsProps {
-  projectItems: ProjectItem[];
-  cursorRef: React.RefObject<HTMLDivElement>;
-  scaleAnimation: ScaleAnimation;
-}
-
-
-interface ScaleAnimation extends Variants {
+interface scaleAnimation extends Variants {
   initial: { opacity: number; scale: number };
   enter: { opacity: number; scale: number };
   closed: { opacity: number; scale: number };
 }
 
-export default function DesktopProjects({ projectItems, cursorRef, scaleAnimation }: DesktopProjectsProps) {
+interface DesktopProjectsProps {
+  projectItems: ProjectItem[];
+  cursorRef: React.RefObject<HTMLDivElement>;
+  scaleAnimation: scaleAnimation;
+}
+
+const DesktopProjects: React.FC<DesktopProjectsProps> = ({ projectItems, cursorRef, scaleAnimation }) => {
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
   return (
@@ -59,13 +58,14 @@ export default function DesktopProjects({ projectItems, cursorRef, scaleAnimatio
         <div className='divider'></div>
       </div>
 
+      {/* Modal for displaying images */}
       <motion.div
         variants={scaleAnimation}
         initial="initial"
         animate={activeItem ? "enter" : "closed"}
         className="modal-container"
       >
-        <div className="modal-slider" style={{ top: projectItems.findIndex(item => item.id === activeItem) * -100 + "%" }}>
+        <div className="modal-slider" style={{ top: activeItem ? `${projectItems.findIndex(item => item.id === activeItem) * -100}%` : '0%' }}>
           {projectItems.map((item, index) => (
             <div className="modal" key={`modal_${index}`}>
               <Image
@@ -79,6 +79,7 @@ export default function DesktopProjects({ projectItems, cursorRef, scaleAnimatio
         </div>
       </motion.div>
 
+      {/* Custom cursor */}
       <motion.div
         ref={cursorRef}
         className="cursor"
@@ -86,6 +87,8 @@ export default function DesktopProjects({ projectItems, cursorRef, scaleAnimatio
         initial="initial"
         animate={activeItem ? "enter" : "closed"}
       ></motion.div>
+
+      {/* Cursor label */}
       <motion.div
         className="cursor-label"
         variants={scaleAnimation}
@@ -96,4 +99,6 @@ export default function DesktopProjects({ projectItems, cursorRef, scaleAnimatio
       </motion.div>
     </section>
   );
-}
+};
+
+export default DesktopProjects;
