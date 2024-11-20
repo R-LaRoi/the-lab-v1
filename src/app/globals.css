@@ -49,6 +49,8 @@ svg {
   font-size: 38vw;
 }
 
+/*  page.tsx -------------------------> */
+
 .intro-container {
   position: fixed;
   top: 0.6rem;
@@ -76,16 +78,7 @@ svg {
   display: none;
 }
 
-.col-2 {
-  max-width: none;
-  object-fit: cover;
-  object-position: 50% 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-}
+/* mainTwo Container ----------------> */
 
 .container {
   max-width: 1200px;
@@ -93,18 +86,6 @@ svg {
   padding: 0 20px;
 }
 
-.container-mobile {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .section {
   position: relative;
-}
-
-.divider {
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin: 10px 0;
 }

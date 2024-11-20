@@ -90,3 +90,9 @@
   text-align: right;
   font-size: 1rem;
 }
+
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
