@@ -33,14 +33,14 @@ export const NavBar = (): React.ReactElement => {
 
     <section className='fixed top-5 left-0 w-full flex justify-between items-center p-10 z-[9990]'>
       <div className='flex items-center'>
-        <div style={{ maxWidth: '100%', height: 'auto' }}>
+        <a href="/" style={{ maxWidth: '100%', height: 'auto', padding: '1rem' }}>
           <Image
             src={ahlogo}
             alt='logo'
             width={90}
             priority
           />
-        </div>
+        </a>
       </div>
 
       <div className='relative'>
@@ -53,14 +53,14 @@ export const NavBar = (): React.ReactElement => {
               className="fixed bottom-0 left-0 h-screen w-screen bg-[#f1f1f1] z-[998]"
             >
 
-              <div style={{ maxWidth: '100%', height: 'auto', padding: '1rem' }}>
+              <a href="/" style={{ maxWidth: '100%', height: 'auto', padding: '1rem' }}>
                 <Image
                   src={ahlogo}
                   alt='logo'
                   width={90}
                   priority
                 />
-              </div>
+              </a>
 
               <div className='absolute top-5 right-5 text-4xl text-zinc-900 p-8 ' onClick={() => setNavActive(false)}>
                 <FontAwesomeIcon icon={faStarOfLife} />
@@ -68,7 +68,7 @@ export const NavBar = (): React.ReactElement => {
               <div className='p-10'>
                 <ul className='nav-list text-left text-zinc-400'>
                   {['Projects', 'Services', 'Contact'].map((link) => (
-                    <Link key={link} href={`/${link}`}>
+                    <Link key={link} href={`/Pages/${link}`}>
                       <li className='li-list'><span>{link}</span></li>
                     </Link>
                   ))}
