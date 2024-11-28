@@ -68,7 +68,7 @@ export const NavBar = (): React.ReactElement => {
               <div className='p-10'>
                 <ul className='nav-list text-left text-zinc-400'>
                   {['Projects', 'Services', 'Contact'].map((link) => (
-                    <Link key={link} href={`Pages/${link}`}>
+                    <Link key={link} href={`/${link}`}>
                       <li className='li-list'><span>{link}</span></li>
                     </Link>
                   ))}
