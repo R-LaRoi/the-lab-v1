@@ -67,10 +67,10 @@ export const NavBar = (): React.ReactElement => {
               </div>
               <div className='p-10'>
                 <ul className='nav-list text-left text-zinc-400'>
-                  <Link href='/services'><li className='li-list'><span>services</span></li></Link>
-                  <Link href='/Projects'><li className='li-list'><span>work</span></li></Link>
-                  <Link href='/Menu/connect'><li className='li-list'><span>contact</span></li></Link>
-                  <Link href='/'><li className='li-list'><span>home</span></li></Link>
+                  {/* <Link href='/services'><li className='li-list'><span>services</span></li></Link> */}
+                  <Link href='/Pages/Projects'><li className='li-list'><span>Projects</span></li></Link>
+                  {/* <Link href='/contact'><li className='li-list'><span>contact</span></li></Link>
+                  <Link href='/'><li className='li-list'><span>home</span></li></Link> */}
                 </ul>
               </div>
             </motion.div>
