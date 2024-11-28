@@ -1,11 +1,11 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { NavBar } from '@/Components/Nav';
-import MainTwo from '@/Components/MainTwo';
-import Loader from '@/Components/Loader'
-import Footer from '@/Components/Footer';
-import MainText from '@/Components/Text';
-import MainProjects from '@/Components/MainProjects';
+import { NavBar } from '@/app/Components/Nav';
+import MainTwo from '@/app/Components/MainTwo';
+import Loader from '@/app/Components/Loader'
+import Footer from '@/app/Components/Footer';
+import MainText from '@/app/Components/Text';
+import MainProjects from '@/app/Components/MainProjects';
 
 
 

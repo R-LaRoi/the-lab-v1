@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import '../app/Stylesheets/projects.css';
+import '../Stylesheets/projects.css';
 
 interface ProjectItem {
   id: string;

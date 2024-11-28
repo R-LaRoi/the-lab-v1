@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Variants } from 'framer-motion';
-import DesktopProjects from '../Components/DesktopProject';
-import MobileProjects from '../Components/MobileProject';
+import DesktopProjects from './DesktopProject';
+import MobileProjects from './MobileProject';
 
 
 interface projectItem {

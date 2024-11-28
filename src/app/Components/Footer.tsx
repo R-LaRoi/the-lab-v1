@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../src/app/Stylesheets/footer.css'
+import '../Stylesheets/footer.css'
 
 // const footerLinks1 = ['work', 'services', 'agency', 'contact']
 // const footerLinks2 = ['Spotify', 'LINKEDIN', 'AH GROUP']
