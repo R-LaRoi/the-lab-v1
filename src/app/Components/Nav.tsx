@@ -31,9 +31,9 @@ export const NavBar = (): React.ReactElement => {
 
   return (
 
-    <section className='fixed top-5 left-0 w-full flex justify-between items-center p-10 z-[9990]'>
+    <section className='fixed top-4 left-0 w-full flex justify-between items-center  z-[9990]'>
       <div className='flex items-center'>
-        <a href="/" style={{ maxWidth: '100%', height: 'auto', padding: '1rem' }}>
+        <a href="/" style={{ maxWidth: '100%', height: 'auto', padding: '.5rem' }}>
           <Image
             src={ahlogo}
             alt='logo'
