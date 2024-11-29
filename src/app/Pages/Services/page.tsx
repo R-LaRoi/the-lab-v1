@@ -6,9 +6,9 @@ import Reveal from '../../Components/Animations/Reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faWordpressSimple, faShopify, faSquarespace, faWebflow, faReact } from '@fortawesome/free-brands-svg-icons';
-type Props = {}
 
-export default function page({ }: Props) {
+
+export default function page() {
   return (
     <div className='intro-container bg-[#f1f1f1] '>
       <NavBar />
