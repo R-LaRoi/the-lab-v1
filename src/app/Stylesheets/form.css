@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 5px 0px 40px 33px;
+  outline: none;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.submitButton {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

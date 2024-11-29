@@ -89,3 +89,13 @@ svg {
 .section {
   position: relative;
 }
+
+@media (max-width: 720px) and (max-height: 896px) {
+  .mobile {
+    margin-top: 70%;
+  }
+
+  .mobile-form {
+    margin-top: 30%;
+  }
+}
