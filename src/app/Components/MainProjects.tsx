@@ -16,35 +16,35 @@ const projectItems: projectItem[] = [
   {
     id: 'one',
     title: 'Guardians',
-    description: 'one',
+    description: 'Design & Development',
     link: '/one',
     image: 'https://github.com/user-attachments/assets/c75cdbf7-d9bb-40d8-96a8-33ba16ca66e6',
   },
   {
     id: 'two',
-    title: 'DefPresse',
-    description: 'two',
+    title: 'Ninety-Nine',
+    description: 'Design & Development',
     link: '/two',
     image: 'https://github.com/user-attachments/assets/98835a41-5002-4c9a-b2ca-22851a58bda8',
   },
   {
     id: 'three',
     title: 'AHAUS',
-    description: 'three',
+    description: 'Design & Development',
     link: '/three',
     image: 'https://github.com/user-attachments/assets/1bc03e21-f581-4cfe-95a6-5241d5a223ef',
   },
   {
     id: 'four',
     title: 'Portfolio',
-    description: 'four',
+    description: 'Development',
     link: '/four',
     image: 'https://github.com/user-attachments/assets/4dff6759-0d49-48e1-8d87-37bbf4b82e91',
   },
   {
     id: 'five',
     title: 'TSC',
-    description: 'five',
+    description: 'Development',
     link: 'five',
     image: 'https://github.com/user-attachments/assets/1340b6ae-2266-4072-a90c-71bdfcce732c',
   }
@@ -105,22 +105,7 @@ export default function MainProjects() {
           scaleAnimation={scaleAnimation} />
       )}
       <div>
-        <div className="mb-4 md:mb-0 flex justify-center items-center md:w-full">
-          <a
-            href="#work"
-            className="
-      w-[50%] md:w-[15%]
-      p-4 rounded-full
-      border border-black hover:border-gray-800
-     hover:text-gray-800 text-base
-      transition-all duration-300 ease-in-out
-      transform hover:scale-105
-      text-center
-      inline-block"
-          >
-            <span>more</span>
-          </a>
-        </div>
+
       </div>
     </>
   );

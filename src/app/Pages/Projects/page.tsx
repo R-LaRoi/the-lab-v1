@@ -7,7 +7,8 @@ import '../../Stylesheets/parallax.css'
 import { NavBar } from '@/app/Components/Nav';
 import MainProjects from '@/app/Components/MainProjects';
 import Reveal from '../../Components/Animations/Reveal';
-
+import '../../Stylesheets/footer.css'
+import HorizontalSlides from '@/app/Components/HorizontalSlides';
 
 export default function Projects() {
 
@@ -19,13 +20,13 @@ export default function Projects() {
   })
 
 
-  // const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
+
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
   const scale7 = useTransform(scrollYProgress, [0, 1], [1, 7]);
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-  // const scale9 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+
 
   const pictures = [
 
@@ -55,7 +56,7 @@ export default function Projects() {
 
 
   return (
-    <>
+    <div>
       <div ref={container} className='container-plx'>
         <div className='sticky'>
           {
@@ -99,10 +100,10 @@ export default function Projects() {
 
           </div>
         </div>
-
         <MainProjects />
       </div>
+      <HorizontalSlides />
 
-    </>
+    </div>
   )
 }
