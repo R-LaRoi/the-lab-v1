@@ -7,7 +7,7 @@ import '../../Stylesheets/parallax.css'
 import { NavBar } from '@/app/Components/Nav';
 import MainProjects from '@/app/Components/MainProjects';
 import Reveal from '../../Components/Animations/Reveal';
-import Footer from '@/app/Components/Footer';
+import ahlogo from '@/app/assets/ahlab-logo.png'
 
 export default function Projects() {
 
@@ -23,39 +23,33 @@ export default function Projects() {
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-  const scale7 = useTransform(scrollYProgress, [0, 1], [1, 8]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+  const scale7 = useTransform(scrollYProgress, [0, 1], [1, 7]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 6]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 4]);
 
   const pictures = [
+
     {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
-      scale: scale
-    },
-    {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
+      src: "https://github.com/user-attachments/assets/08486bee-23bc-42e4-8d37-965b212e94d8",
       scale: scale4
     },
     {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
+      src: "https://github.com/user-attachments/assets/19ceeb47-0be5-42b5-b6ca-bd9ab56dfcd6",
       scale: scale5
     },
     {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
+      src: "https://github.com/user-attachments/assets/34292003-0576-4f52-8829-26aac2435429",
       scale: scale6
     },
     {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
+      src: "https://github.com/user-attachments/assets/245e99d3-70c6-4621-993d-95096ee0dfe1",
       scale: scale8
     },
     {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
+      src: "https://github.com/user-attachments/assets/310f8b61-56d9-4cdc-9f26-72fdb4c08b32",
       scale: scale7
     },
-    {
-      src: "https://github.com/user-attachments/assets/067f5ae1-0a41-4650-a9f5-ff68e2c6a216",
-      scale: scale9
-    }
+
 
   ]
 
@@ -81,7 +75,9 @@ export default function Projects() {
 
           }
         </div>
-
+        <div className='text-7xl text-bold p-8 z-99 uppercase'>
+          projects
+        </div>
       </div>
 
       <div className='section-two'>

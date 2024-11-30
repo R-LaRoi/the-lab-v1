@@ -37,7 +37,7 @@ export default function page() {
         <div className="flex flex-col items-center justify-between space-x-10 md:flex-row">
           <video playsInline autoPlay muted loop className="rounded-2xl md:order-2  def-video" >
             <source
-              src="https://github.com/user-attachments/assets/513eb1cb-137e-44af-a649-899a1555c0f2"
+              src="https://github.com/user-attachments/assets/43b9c48b-f119-44f6-a890-19c6e135db95"
               type="video/mp4"
             />
           </video>

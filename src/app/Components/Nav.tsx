@@ -62,11 +62,11 @@ export const NavBar = (): React.ReactElement => {
                 />
               </a>
 
-              <div className='absolute top-5 right-5 text-4xl text-zinc-900 p-8 ' onClick={() => setNavActive(false)}>
+              <div className='absolute top-5 right-5 text-4xl text-zinc-900 p-8  ' onClick={() => setNavActive(false)}>
                 <FontAwesomeIcon icon={faStarOfLife} />
               </div>
-              <div className='p-10'>
-                <ul className='nav-list text-left text-zinc-400'>
+              <div className='p-10 bg-[#19191b]'>
+                <ul className='nav-list text-left '>
                   {['Projects', 'Services', 'Contact'].map((link) => (
                     <Link key={link} href={`/Pages/${link}`}>
                       <li className='li-list'><span>{link}</span></li>
