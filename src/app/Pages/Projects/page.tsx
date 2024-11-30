@@ -7,7 +7,7 @@ import '../../Stylesheets/parallax.css'
 import { NavBar } from '@/app/Components/Nav';
 import MainProjects from '@/app/Components/MainProjects';
 import Reveal from '../../Components/Animations/Reveal';
-import ahlogo from '@/app/assets/ahlab-logo.png'
+
 
 export default function Projects() {
 
@@ -19,13 +19,13 @@ export default function Projects() {
   })
 
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  // const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
   const scale7 = useTransform(scrollYProgress, [0, 1], [1, 7]);
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  // const scale9 = useTransform(scrollYProgress, [0, 1], [1, 4]);
 
   const pictures = [
 
