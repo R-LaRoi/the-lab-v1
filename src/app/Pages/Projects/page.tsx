@@ -7,7 +7,7 @@ import '../../Stylesheets/parallax.css'
 import { NavBar } from '@/app/Components/Nav';
 import MainProjects from '@/app/Components/MainProjects';
 import Reveal from '../../Components/Animations/Reveal';
-
+import Footer from '@/app/Components/Footer';
 
 export default function Projects() {
 
@@ -90,7 +90,7 @@ export default function Projects() {
           <div className="flex flex-col md:flex-row mx-4 sm:mx-8 md:mx-[6rem] my-48 sm:my-32 md:my-[12rem] gap-6 sm:gap-8 md:gap-12">
             <div className="w-full  mt-4 md:mt-0">
               <Reveal>
-                <p style={{ fontSize: '4rem' }}>
+                <p className='mobile-service'>
                   Design Beyond Limits
                 </p>
               </Reveal>
@@ -106,6 +106,7 @@ export default function Projects() {
 
         <MainProjects />
       </div>
+
     </>
   )
 }
