@@ -4,19 +4,18 @@ import { NavBar } from '@/app/Components/Nav';
 import ServiceItem from '@/app/Components/ServiceItems';
 import Reveal from '../../Components/Animations/Reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faWordpressSimple, faShopify, faSquarespace, faWebflow, faReact } from '@fortawesome/free-brands-svg-icons';
-
+import Footer from '@/app/Components/Footer';
 
 export default function page() {
   return (
     <div className='intro-container bg-[#f1f1f1] '>
       <NavBar />
-      <div className="container mx-auto">
+      <div className="container mx-auto mobile-service">
         <div className="flex flex-col md:flex-row mx-4 sm:mx-8 md:mx-[6rem] my-48 sm:my-32 md:my-[12rem] gap-6 sm:gap-8 md:gap-12">
           <div className="w-full  mt-4 md:mt-0">
             <Reveal>
-              <p style={{ fontSize: '4rem', lineHeight: '1' }} >
+              <p className='mobile-service' >
                 Empowering Brands through Innovative Web Design
               </p>
 
@@ -36,7 +35,7 @@ export default function page() {
 
       <div>
         <div className="flex flex-col items-center justify-between space-x-10 md:flex-row">
-          <video playsInline autoPlay muted loop className="rounded-2xl md:order-2" style={{ width: '60%' }}>
+          <video playsInline autoPlay muted loop className="rounded-2xl md:order-2" >
             <source
               src="https://github.com/user-attachments/assets/513eb1cb-137e-44af-a649-899a1555c0f2"
               type="video/mp4"
@@ -45,7 +44,7 @@ export default function page() {
 
           <div className="flex-1 max-w-sm text-left md:order-1 md:ml-0 md:mt-0">
             <Reveal>
-              <p className='text-2xl'>
+              <p className='text-2xl mobile-subtext'>
                 We provide tailored solutions that elevate digital presence worldwide. Every project is a canvas for innovation, pushing boundaries with an unwavering commitment to excellence.
               </p>
             </Reveal>
@@ -55,9 +54,9 @@ export default function page() {
         <section className='mt-[20%] p-4 md:mt-[10%] md:p-8'>
           <div>
             <div className="max-w-5xl mx-auto">
-              <div className='text-5xl mb-4 md:mb-8 text-center'>We're dedicated to helping you define and build your digital presence.</div>
+              <div className='text-5xl mb-4 md:mb-8 text-center '> Define and build your digital presence.</div>
             </div>
-            <div className="flex items-left justify-center space-x-4 mb-4 md:space-x-6 md:mb-8 ">
+            <div className="flex items-left justify-center space-x-4 mb-4 md:space-x-6 md:mb-8 py-4">
               <FontAwesomeIcon icon={faWordpressSimple} className="text-3xl" />
               <FontAwesomeIcon icon={faShopify} className="text-3xl" />
               <FontAwesomeIcon icon={faSquarespace} className="text-3xl" />
@@ -85,6 +84,7 @@ export default function page() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
 
   )

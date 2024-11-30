@@ -90,12 +90,25 @@ svg {
   position: relative;
 }
 
+.mobile-service {
+  font-size: 4rem;
+  line-height: 1;
+}
+
 @media (max-width: 720px) and (max-height: 896px) {
   .mobile {
     margin-top: 70%;
   }
 
+  .mobile-subtext {
+    display: none;
+  }
   .mobile-form {
     margin-top: 30%;
+  }
+
+  .mobile-service {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 }
