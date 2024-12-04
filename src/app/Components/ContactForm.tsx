@@ -29,7 +29,7 @@ export default function Form() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    handleSubmit(formData);
+    handleSubmit(e);
   };
 
   if (state.succeeded) {
