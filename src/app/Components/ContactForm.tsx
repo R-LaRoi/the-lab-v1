@@ -1,8 +1,6 @@
-
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import '../Stylesheets/form.css'
-
-
+import { useForm, ValidationError } from '@formspree/react';
+import '../Stylesheets/form.css';
 
 interface FormData {
   name: string;
@@ -11,15 +9,15 @@ interface FormData {
   message: string;
 }
 
-
 export default function Form() {
-
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    message: '',
-    service: ''
+    service: '',
+    message: ''
   });
+
+  const [state, handleSubmit] = useForm("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -29,16 +27,17 @@ export default function Form() {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    handleSubmit(formData);
   };
 
-
-
+  if (state.succeeded) {
+    return <p>Thanks for your message!</p>;
+  }
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form" onSubmit={onSubmit}>
       <div className="inputGroup">
         <input
           type="text"
@@ -49,6 +48,7 @@ export default function Form() {
           placeholder=" First Last"
         />
         <label htmlFor="name"><span className='px-2'><small>01</small></span> What's your name?</label>
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
       </div>
       <div className="inputGroup">
         <input
@@ -60,16 +60,18 @@ export default function Form() {
           required
         />
         <label htmlFor="email"><span className='px-2'><small>02</small></span>What's your email?</label>
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
       <div className="inputGroup">
         <textarea
-          name="message"
+          name="service"
           value={formData.service}
           onChange={handleChange}
           required
           placeholder="Web Design, Web Development..."
         ></textarea>
         <label htmlFor="service"><span className='px-2'><small>03</small></span>What services are you looking for?</label>
+        <ValidationError prefix="Service" field="service" errors={state.errors} />
       </div>
       <div className="inputGroup">
         <textarea
@@ -80,8 +82,11 @@ export default function Form() {
           placeholder="We're happy to help you..."
         ></textarea>
         <label htmlFor="message"><span className='px-2'><small>04</small></span>Message</label>
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
       </div>
-      <button type="submit" className="submitButton">Send</button>
+      <button type="submit" className="submitButton" disabled={state.submitting}>
+        {state.submitting ? 'Sending...' : 'Send'}
+      </button>
     </form>
-  )
+  );
 }
