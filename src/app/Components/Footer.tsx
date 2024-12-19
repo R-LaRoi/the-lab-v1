@@ -58,7 +58,7 @@ export default function Footer() {
                     <span>info@ahlab.co</span>
                   </a>
                 </div>
-                <div className="mb-4 md:mb-0 flex-1 md:flex-none md:w-64">
+                {/* <div className="mb-4 md:mb-0 flex-1 md:flex-none md:w-64">
                   <a
                     href="mailto:"
                     className="
@@ -73,7 +73,7 @@ export default function Footer() {
                   >
                     <span>info@ahlab.co</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
